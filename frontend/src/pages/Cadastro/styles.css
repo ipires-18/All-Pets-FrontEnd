@@ -1,0 +1,96 @@
+.cadastro-pessoal-container{
+    display: flex;
+}
+
+.fluxo-cadastro-container{
+    position: absolute;
+    width: 664px;
+    height: 1408px;
+    left: 0px;
+    top: -1px;
+
+    background: #9C27B0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+
+.fluxo_1{
+    color: white;
+    margin-left: 200px;
+    margin-top: 320px;
+}
+
+.fluxo_2{
+    color: white;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.fluxo_3{
+    color: white;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.fluxo_4{
+    color: white;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+/*.ball_1 {
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    margin-top: 340px;
+    margin-right: -100px;
+    margin-left: 85px;
+}
+
+.ball_2 {
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #cecece;
+    background-color: #cecece;
+    margin-top: 400px;
+    margin-right: -100px;
+    margin-left: 85px;
+}
+
+.ball_3 {
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #cecece;
+    background-color: #cecece;
+    margin-top: 200px;
+    margin-right: -100px;
+    margin-left: 85px;
+}
+
+.ball_4 {
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #cecece;
+    background-color: #cecece;
+    margin-top: 415px;
+    margin-right: -100px;
+    margin-left: 85px;
+}*/
+
+.logo{
+    position: absolute;
+    left: 36%;
+    right: 79.55%;
+    top: 7%;
+    bottom: 81.87%;
+}
+
