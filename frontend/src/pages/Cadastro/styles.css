@@ -1,96 +1,119 @@
 .cadastro-pessoal-container{
-    display: flex;
+    background-color: #cecece;
+    border: #000000;
 }
 
 .fluxo-cadastro-container{
-    position: absolute;
-    width: 664px;
-    height: 1408px;
-    left: 0px;
-    top: -1px;
-
+    position: fixed;
+    width: 530px;
+    height: 710px;
     background: #9C27B0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
 }
 
-.fluxo_1{
+.paragafo-letra{
     color: white;
-    margin-left: 200px;
-    margin-top: 320px;
+    font-family: Roboto;
+    font-style: unset;
+    font-weight: 505;
+    font-size: 19.8px;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 225px;
 }
 
-.fluxo_2{
-    color: white;
-    margin-left: 200px;
-    margin-top: 50px;
-}
-
-.fluxo_3{
-    color: white;
-    margin-left: 200px;
-    margin-top: 50px;
-}
-
-.fluxo_4{
-    color: white;
-    margin-left: 200px;
-    margin-top: 50px;
-}
-
-/*.ball_1 {
+.ball_white {
     border-radius: 50%;
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    border: 1px solid #ffffff;
+    height: 25px;
+    width: 25px;
     background-color: #ffffff;
-    margin-top: 340px;
-    margin-right: -100px;
-    margin-left: 85px;
+    position: absolute;
+    margin-left: 140px;
 }
 
-.ball_2 {
+.ball_grey {
     border-radius: 50%;
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    border: 1px solid #cecece;
+    height: 25px;
+    width: 25px;
     background-color: #cecece;
-    margin-top: 400px;
-    margin-right: -100px;
-    margin-left: 85px;
+    position: absolute;
+    margin-left: 140px;
 }
 
-.ball_3 {
-    border-radius: 50%;
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    border: 1px solid #cecece;
-    background-color: #cecece;
-    margin-top: 200px;
-    margin-right: -100px;
-    margin-left: 85px;
+.topics{
+    margin-top: 180px;
 }
-
-.ball_4 {
-    border-radius: 50%;
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    border: 1px solid #cecece;
-    background-color: #cecece;
-    margin-top: 415px;
-    margin-right: -100px;
-    margin-left: 85px;
-}*/
 
 .logo{
-    position: absolute;
-    left: 36%;
-    right: 79.55%;
-    top: 7%;
-    bottom: 81.87%;
+    position: fixed;
+    left: 180px;
+    top: 4%;
 }
 
+.animal-photo{
+    position: fixed;
+    top: 410px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    opacity: 0.6;
+    position: absolute;
+}
+
+.ball-photo{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: #8b8b8b;
+    position: absolute;
+    left: 500px;
+    top: 125px;
+    border: #8b8b8b;
+}
+
+.form-cadastro-container{
+    position: fixed;
+    height: 1000px;
+    width: 1000px;
+    margin-left: 526px;
+    background-color: white;
+    
+}
+
+.info-pessoal{
+    color: #9C27B0;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.text-form{
+    color: #5C5C5C;
+    font-family: Roboto;
+    font-style: initial;
+    margin-bottom: 10px;
+}
+
+.form-nome{
+    margin-left: 150px;
+}
+
+.form{
+    margin-left: 150px;
+    margin-top: 18px;
+}
+
+.input-nome{
+    width: 230px;
+}
+
+.input-email{
+    width: 600px;
+}
+
+.input-sex{
+    padding: 20px;
+}
+
+.insert-photo{
+    margin-left: 600px;
+    margin-top: 65px;
+}
