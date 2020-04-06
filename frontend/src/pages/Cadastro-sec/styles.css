@@ -1,0 +1,316 @@
+.register-container {
+    width: 100%;
+    max-width: 999px;
+    height: 100vh;
+    margin: 0 10px 10px 175px; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.register-container .content {
+    width: 100%;
+    height: 90%;
+    
+    background: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-container .content section {
+    width: 100%;
+    max-width: 380px;
+}
+
+.register-container article.imgs-container img{
+    position: relative;
+    margin-top: 20px;
+    float:left;
+    width:300px; 
+    height:250px;  
+    bottom: 0;
+    opacity: 0.5; 
+    top: 15px;  
+}
+
+.register-container div.fist-body{
+    border: 1px solid #9c27b0;
+    background-color: #9C27B0;
+    padding: 100px 0 0 0;
+    border-radius: 1%;  
+    bottom: 20px;
+    height: 100%;
+    width: 30.2%;
+}
+
+.register-container article.body-container img{
+    position: relative;
+    width: 90%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+    bottom: 45px;
+    left: 15px;    
+}
+
+.register-container article.circus-p, .circus-s, .circus-t, .circus-q {
+    position: relative;
+    width: 20px;
+    height: 21px;
+    
+    border-radius: 50%;
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    left: 60px;      
+}
+
+.register-container article.circus-s{
+    background-color:rgb(199, 199, 199) ;
+}
+
+.register-container article.circus-t{
+    background-color: white;
+}
+
+.register-container form b{
+    position: relative;
+    color: white;
+
+    bottom: 9px;
+    left: 90px;
+
+}
+
+.register-container div.body-info h1{
+    position: relative;
+    color: #9c27b0;
+        
+    left: 510px;
+    bottom: 550px;
+}
+
+.register-container div.info-container h4{
+    color: #686868;
+}
+
+.register-container div.info-container{
+    position: relative;
+  
+    left: 395px;
+    bottom: 520px;
+}
+
+.register-container div.info-container input{
+    font-size: 20px;
+    border: 1px solid rgb(180, 178, 178);
+    width: 162%;
+    height: 45px; 
+}
+
+.register-container div.info-button {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border: 1px solid rgb(180, 178, 178);
+    padding: 5px 0 2px 0;
+    border-radius: 7px;
+    margin: 0 auto;
+
+    bottom: 5px;
+    right: 15px;
+}
+
+.register-container article.info-s h4{
+    position: relative;
+    bottom: 5px;
+}
+
+.register-container div.info-button button{
+    position: relative;
+    height: 100%;
+    font-size: 20px;
+    padding: 9px 20px;
+    background-color: #9C27B0;
+    color: white;
+    text-align: center;
+
+    border-radius: 8px;
+
+    left: 2px;
+    bottom: 3px;
+}
+
+.register-container div.info-age {
+    position: relative;
+    
+    left: 330px;
+    bottom: 70px;
+}
+
+.register-container div.info-age h4{
+    position: relative;
+
+    right: 30px;
+    bottom: 1px;
+}
+
+.register-container div.info-age input{
+    position: relative;
+    font-size: 20px;
+    border: 1px solid rgb(180, 178, 178);
+    width: 62%;
+    height: 45px; 
+    right: 30px;
+
+}
+
+.register-container div.info-raca {
+    position:relative;
+    
+    bottom: 124px;
+    left: 300px;
+}
+
+.register-container div.info-raca input{
+    font-size: 20px;
+    border: 1px solid rgb(180, 178, 178);
+    width: 62%;
+    height: 45px; 
+}
+
+.register-container div.info-button-porte{
+    position: relative;
+    width: 92%;
+    height: 50px;
+    border: 1px solid rgb(180, 178, 178);
+    padding: 5px 0 2px 0;
+    border-radius: 7px;
+    margin: 0 auto;
+
+    position: relative;
+    bottom: 60px;
+    right: 15px;
+}
+
+.register-container div.info-button-porte button{
+    position: relative;
+    height: 100%;
+    font-size: 20px;
+    padding: 9px 10px;
+    background-color: #9C27B0;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+
+    left: 1px;
+    bottom: 2px;
+}
+
+.register-container article.info-p h4{
+    position: relative;
+    left: 4px;
+    bottom: 60px;
+}
+
+.register-container article.body-h4-med h4{
+    position: relative;
+    bottom: 110px;
+}
+
+.register-container div.info-button-med {
+    position: relative;
+    
+    width: 55%;
+    height: 50px;
+    border: 1px solid rgb(180, 178, 178);
+    padding: 5px 0 0 0;
+    border-radius: 7px;
+    margin: 0 auto;
+
+    position: relative;
+    bottom: 110px;
+    right: 70px;
+}
+
+.register-container div.info-button-med h4 {
+    position: relative;
+    bottom: 2px;
+    color: #686868;
+}
+
+.register-container div.info-button-med button{
+    position: relative;
+    height: 90%;
+    font-size: 20px;
+    padding: 5px 20px;
+    background-color: #9C27B0;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+
+    left: 1px;
+}
+
+.register-container div.info-med {
+    position: relative;
+    bottom: 175px;
+    left: 172px;
+}
+
+.register-container div.info-med input{
+    position: relative;
+    width: 55%;
+    top: 2px;
+}
+
+.register-container div.info-hour {
+    position: relative;
+    bottom: 235px;
+    left: 350px;
+}
+
+.register-container div.info-hour input {
+    width: 45%;
+}
+
+.register-container div.button-fs-container {
+    position: relative;
+    bottom: 400px;
+    left: 25px;
+    display: flex;
+}
+
+.register-container article.button-first-container button{
+    position: relative;
+    font-size: 20px;
+    padding: 14px 40px;
+    background-color: #5E136A;
+    color: white;  
+
+    top: 210px;
+    border-radius: 8px;    
+}
+
+.register-container article.button-second-container button{
+    position: relative;
+    height: 100%;
+    font-size: 20px;
+    padding: 14px 40px;
+    background-color: #5E136A;
+    color: white;
+
+    border-radius: 8px;
+
+    top: 210px;
+    left: 100px;
+}
