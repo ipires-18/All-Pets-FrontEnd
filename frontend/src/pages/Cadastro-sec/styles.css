@@ -14,8 +14,8 @@
     height: 90%;
     
     background: white;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
 
     display: flex;
     justify-content: space-between;
@@ -283,7 +283,7 @@
     width: 45%;
 }
 
-.register-container div.button-fs-container {
+.register-container div.button-f-container {
     position: relative;
     bottom: 400px;
     left: 25px;

@@ -58,7 +58,7 @@ export default function Cadastro(){
                     </article>
                 </div>
 
-                <div className="body-buttons-container">
+                <div className="body-button-container">
                     <article className="button-first">
                         <button>Próximo</button>
                     </article>

@@ -90,7 +90,7 @@ export default function CadastroSec(){
                         <input placeholder="18:00Hrs" />
                     </div>
 
-                    <div className="button-fs-container">
+                    <div className="button-f-container">
                     <article className="button-first-container">
                         <button>Próximo</button>
                     </article>

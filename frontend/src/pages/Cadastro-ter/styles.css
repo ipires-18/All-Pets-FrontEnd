@@ -1,0 +1,250 @@
+.register-container {
+    width: 100%;
+    max-width: 999px;
+    height: 100vh;
+    margin: 0 10px 10px 175px; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.register-container .content {
+    width: 100%;
+    height: 90%;
+    
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-container .content section {
+    width: 100%;
+    max-width: 380px;
+}
+
+.register-container article.imgs-container img{
+    position: relative;
+    margin-top: 20px;
+    float:left;
+    width:300px; 
+    height:250px;  
+    bottom: 0;
+    opacity: 0.5; 
+    top: 15px;  
+}
+
+.register-container div.fist-body{
+    border: 1px solid #9c27b0;
+    background-color: #9C27B0;
+    padding: 100px 0 0 0;
+    border-radius: 1%;  
+    bottom: 20px;
+    height: 100%;
+    width: 30.2%;
+}
+
+.register-container article.body-container img{
+    position: relative;
+    width: 90%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+    bottom: 45px;
+    left: 15px;    
+}
+
+.register-container article.circus-p, .circus-s, .circus-t, .circus-q {
+    position: relative;
+    width: 20px;
+    height: 21px;
+    
+    border-radius: 50%;
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    left: 60px;      
+}
+
+
+
+.register-container form b{
+    position: relative;
+    color: white;
+
+    bottom: 9px;
+    left: 90px;
+}
+
+.register-container div.container-cuid h1{
+    position: relative;
+    color: #9c27b0;
+    bottom: 540px;
+    left: 550px;
+}
+
+.register-container div.info-cuid-container {
+    position: relative;
+    
+    
+    width: 200%;
+    left: 390px;    
+    bottom: 520px;
+}
+
+.register-container div.info-cuid-container input{
+    font-size: 20px;
+    border: 1px solid rgb(180, 178, 178);
+    width: 84%;
+    height: 40px; 
+    border-radius: 5px;
+}
+
+.register-container div.info-cuid-container h4{
+    color:#5C5C5C;
+}
+
+
+.register-container article.checkbox-cuid label {
+    position: relative;
+    color: #5C5C5C;
+
+    bottom: 40px;
+}
+
+.register-container article.checkbox-cuid input {
+    position: relative;
+    display: flex;
+    height: 2%;
+    
+
+    bottom: 25px;
+    right: 260px;
+}
+
+.register-container div.checkbox-body{
+    position: relative;   
+
+    width: 84%;
+    height: 75px;
+    padding: 40px 10px 5px 5px;
+    border: 1px solid #686868;
+    border-radius: 5px;
+
+    top: 10px;
+    
+}
+
+.register-container article.checkbox-seg {
+    position: relative;
+    left: 75px;
+    
+    
+}
+
+.register-container article.checkbox-seg label{
+    position: relative;
+    right: 40px;
+}
+
+.register-container article.checkbox-ter {
+    position: relative;
+    bottom: 60px;
+    left: 210px;
+}
+
+.register-container article.checkbox-ter label{
+    position: relative;
+    right: 40px;
+} 
+
+.register-container article.checkbox-qt {
+    position: relative;
+    bottom: 120px;
+    left: 330px;
+    color: #9c27b0;
+}
+
+.register-container article.checkbox-qt label{
+    position: relative;
+    right: 40px;
+}
+
+.register-container article.checkbox-dom {
+    position: relative;
+    bottom: 180px;
+    left: 450px;
+}
+
+.register-container article.checkbox-dom label{
+    position: relative;
+    right: 40px;
+}
+
+.register-container article.body-cotainer-cuidador h3{
+    position: relative;
+    color: #5C5C5C;
+    font-size: 15px;
+
+    top: 10px;
+}
+
+.register-container article.body-end{
+    position: relative;
+
+    top: 20px;
+}
+
+.register-container article.body-end-seq {
+    position: relative;
+
+    top: 5px;
+}
+
+.register-container article.body-h4-esp{
+    position: relative;
+    top: 10px;
+}
+
+.register-container article.body-h4-ajus{
+    position: relative;
+    top: 4px;
+}
+
+.register-container div.button-fs-container {
+    position: relative;
+    bottom: 170px;
+    left: 25px;
+    display: flex;
+}
+
+.register-container article.button-first-container button{
+    position: relative;
+    font-size: 20px;
+    padding: 14px 40px;
+    background-color: #5E136A;
+    color: white;  
+
+    top: 210px;
+    border-radius: 8px;    
+}
+
+.register-container article.button-second-container button{
+    position: relative;
+    height: 100%;
+    font-size: 20px;
+    padding: 14px 40px;
+    background-color: #5E136A;
+    color: white;
+
+    border-radius: 8px;
+
+    top: 210px;
+    left: 100px;
+}
