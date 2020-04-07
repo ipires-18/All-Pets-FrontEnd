@@ -1,9 +1,9 @@
 import React from 'react';
-import './styles.css';
+import './styles1.css';
 import LogoBranco from '../../assets/logo_branco.svg';
 import LoginPets from '../../assets/login_pets2.jpeg';
 
-export default function CadastroPessoal() {
+export default function CadastroEndereco() {
     return(
         <div className="cadastro-container">
             <div className="passo-a-passo">
