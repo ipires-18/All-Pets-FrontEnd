@@ -20,10 +20,15 @@ export default function CadastroEndereco() {
                     <article className="circus-grey2"/>
                     <article className="circus-grey3"/>
                 </form>
-                
                 <div>
                     <img src={LoginPets} className="dog-photo"></img>
                 </div> 
+            </div>
+            <div className="body-endereco">
+                <div>
+                    <button className="button-next">Próximo</button>
+                    <button className="button-cancel">Cancelar</button>
+                </div>
             </div>
         </div>
     )

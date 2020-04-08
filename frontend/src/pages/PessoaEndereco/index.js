@@ -19,11 +19,16 @@ export default function CadastroPessoalEnd() {
                     <article className="circus-grey1"/>
                     <article className="circus-grey2"/>
                     <article className="circus-grey3"/>
-                </form>
-                
+                </form>  
                 <div>
                     <img src={LoginPets} className="dog-photo"></img>
-                </div> 
+                </div>
+            </div>
+            <div className="body-pessoa-endereco">
+                <div>
+                    <button className="button-next">Próximo</button>
+                    <button className="button-cancel">Cancelar</button>
+                </div>
             </div>
         </div>
     )

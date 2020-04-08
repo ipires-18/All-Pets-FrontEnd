@@ -104,3 +104,39 @@
     margin-top: 131px;
     position: fixed;
 }
+
+.button-next{
+    background-color: #B42DCC;
+    border: 1px solid #B42DCC;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 238px;
+    height: 55px;
+    margin-top: 475px;
+    position: fixed;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 41px;
+    margin-left: 385px;
+}
+
+.button-cancel{
+    background-color: #BAA8A8;
+    border: 1px solid #BAA8A8;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 238px;
+    height: 54px;
+    margin-top: 476px;
+    position: fixed;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 41px;
+    margin-left: 650px;
+}
