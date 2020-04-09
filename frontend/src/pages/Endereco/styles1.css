@@ -105,6 +105,15 @@
     position: fixed;
 }
 
+.letra-form{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 26px;
+    color: #5C5C5C;
+}
+
 .button-next{
     background-color: #B42DCC;
     border: 1px solid #B42DCC;

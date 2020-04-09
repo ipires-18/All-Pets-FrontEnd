@@ -25,6 +25,22 @@ export default function CadastroPessoalEnd() {
                 </div>
             </div>
             <div className="body-pessoa-endereco">
+                <div className="rg-container">
+                    <p className="letra-form">RG*</p>
+                    <input className="input-rg" placeholder="  __.___.___-_"></input>
+                </div>
+                <div className="cpf-container">
+                    <p className="letra-form">CPF*</p>
+                    <input className="input-cpf" placeholder="  ___.___.___-__"></input>
+                </div>
+                <div className="phone-container">
+                    <p className="letra-form">Celular*</p>
+                    <input className="input-ddd" placeholder="  __"></input>
+                    <input className="input-number" placeholder="  _____-____"></input>
+                </div>
+                <div className="info-adress">
+                    <h2>Informação de Endereço</h2>
+                </div>
                 <div>
                     <button className="button-next">Próximo</button>
                     <button className="button-cancel">Cancelar</button>
