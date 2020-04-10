@@ -25,9 +25,29 @@ export default function CadastroEndereco() {
                 </div> 
             </div>
             <div className="body-endereco">
+                <div className="endereco-container">
+                    <p className="letra-form">Endereço*</p>
+                    <input className="input" placeholder="  Rua Haddok Lobo"></input>
+                </div>
+                <div className="numero-container">
+                    <p className="letra-form">Numero*</p>
+                    <input className="input-numero" placeholder="  595"></input>
+                </div>
+                <div className="complemento-container">
+                    <p className="letra-form">Complemento*</p>
+                    <input className="input-complemento" placeholder="  casa, bloco, apt..."></input>
+                </div>
+                <div className="bairro-container">
+                    <p className="letra-form">Bairro*</p>
+                    <input className="input" placeholder="  Paulista"></input>
+                </div>
+                <div className="referencia-container">
+                    <p className="letra-form">Ponto de referencia</p>
+                    <input className="input-referencia" placeholder="  Seguindo a padaria Polipan..."></input>
+                </div>
                 <div>
                     <button className="button-next">Próximo</button>
-                    <button className="button-cancel">Cancelar</button>
+                    <button className="button-cancel">Voltar</button>
                 </div>
             </div>
         </div>

@@ -41,9 +41,21 @@ export default function CadastroPessoalEnd() {
                 <div className="info-adress">
                     <h2>Informação de Endereço</h2>
                 </div>
+                <div className="cep-container">
+                    <p className="letra-form">CEP*</p>
+                    <input className="input-cpf" placeholder="  _____-___"></input>
+                </div>
+                <div className="estado-container">
+                    <p className="letra-form">Estado*</p>
+                    <input className="input-cpf" placeholder="  São Paulo"></input>
+                </div>
+                <div className="cidade-container">
+                    <p className="letra-form">Cidade*</p>
+                    <input className="input-cpf" placeholder="  Garulhos"></input>
+                </div>
                 <div>
                     <button className="button-next">Próximo</button>
-                    <button className="button-cancel">Cancelar</button>
+                    <button className="button-cancel">Voltar</button>
                 </div>
             </div>
         </div>

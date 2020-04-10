@@ -31,7 +31,7 @@ export default function CadastroPessoal() {
                     <h2>Informação Pessoal</h2>
                 </div>
                 <div className="name">
-                    <p className="letra-form">Nome Completo</p>
+                    <p className="letra-form">Nome Completo*</p>
                     <input placeholder="  Fulano de Tal" className="name-input"></input>
                 </div>
                 <div className="photo">
@@ -39,19 +39,19 @@ export default function CadastroPessoal() {
                     <p className="insert-photo">Insira sua foto</p>
                 </div>
                 <div className="email">
-                    <p className="letra-form">E-mail</p>
+                    <p className="letra-form">E-mail*</p>
                     <input placeholder="  fulano.tal@dominio.com" className="email-input"></input>
                 </div>
                 <div className="email-confirm">
-                    <p className="letra-form">Confirmação de e-mail</p>
+                    <p className="letra-form">Confirmação de e-mail*</p>
                     <input placeholder="  fulano.tal@dominio.com" className="email-input"></input>
                 </div>
                 <div className="password">
-                    <p className="letra-form">Senha</p>
+                    <p className="letra-form">Senha*</p>
                     <input placeholder="  ********" className="password-input"></input>
                 </div>
                 <div className="password-confirm">
-                    <p className="letra-form">Confirmação de senha</p>
+                    <p className="letra-form">Confirmação de senha*</p>
                     <input placeholder="  ********" className="password-input"></input>
                 </div>
                 <div className="sexo">
@@ -71,7 +71,7 @@ export default function CadastroPessoal() {
                 </div>
                 <div>
                     <button className="button-next">Próximo</button>
-                    <button className="button-cancel">Cancelar</button>
+                    <button className="button-cancel">Voltar à pagina principal</button>
                 </div>
             </div>
         </div>

@@ -110,7 +110,7 @@
     border: 1px solid #5C5C5C;
     box-sizing: border-box;
     border-radius: 5px;
-    width: 200px;
+    width: 238px;
     height: 35px;
     margin-top: 2px;
     font-size: 12px;
@@ -120,7 +120,7 @@
     border: 1px solid #5C5C5C;
     box-sizing: border-box;
     border-radius: 5px;
-    width: 200px;
+    width: 238px;
     height: 35px;
     margin-top: 2px;
     font-size: 14px;
@@ -141,7 +141,7 @@
     border: 1px solid #5C5C5C;
     box-sizing: border-box;
     border-radius: 5px;
-    width: 200px;
+    width: 183px;
     height: 35px;
     margin-top: 2px;
     font-size: 12px;
@@ -165,6 +165,24 @@
 .cpf-container{
     margin-left: 385px;
     margin-top: 87px;
+    position: fixed;
+}
+
+.cep-container{
+    margin-top: 290px;
+    margin-left: 385px;
+    position: fixed;
+}
+
+.estado-container{
+    margin-top: 360px;
+    margin-left: 385px;
+    position: fixed;
+}
+
+.cidade-container{
+    margin-top: 360px;
+    margin-left: 650px;
     position: fixed;
 }
 

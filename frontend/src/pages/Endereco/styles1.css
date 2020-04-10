@@ -114,6 +114,76 @@
     color: #5C5C5C;
 }
 
+.input{
+        border: 1px solid #5C5C5C;
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 238px;
+        height: 35px;
+        margin-top: 2px;
+        font-size: 12px;
+}
+
+.input-numero{
+    border: 1px solid #5C5C5C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 75px;
+    height: 35px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+.input-complemento{
+    border: 1px solid #5C5C5C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+.input-referencia{
+    border: 1px solid #5C5C5C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 505px;
+    height: 35px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+.endereco-container{
+    margin-top: 50px;
+    margin-left: 385px;
+    position: fixed;
+}
+
+.numero-container{
+    margin-top: 126px;
+    margin-left: 385px;
+    position: fixed;
+}
+
+.complemento-container{
+    margin-top: 130px;
+    margin-left: 470px;
+    position: fixed;
+}
+
+.bairro-container{
+    margin-top: 205px;
+    margin-left: 385px;
+    position: fixed;
+}
+
+.referencia-container{
+    margin-top: 285px;
+    margin-left: 385px;
+    position: fixed;
+}
+
 .button-next{
     background-color: #B42DCC;
     border: 1px solid #B42DCC;
