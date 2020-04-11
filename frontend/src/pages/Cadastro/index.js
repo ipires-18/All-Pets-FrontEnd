@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component}from 'react';
 import './styles.css';
 import LogoBranco from '../../assets/logo_branco.svg';
 import LoginPets from '../../assets/login_pets2.jpeg';
