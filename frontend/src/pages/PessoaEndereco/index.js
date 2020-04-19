@@ -47,11 +47,11 @@ export default function CadastroPessoalEnd() {
                 </div>
                 <div className="estado-container">
                     <p className="letra-form">Estado*</p>
-                    <input className="input-cpf" placeholder="  São Paulo"></input>
+                    <input className="input-cidade-estado" placeholder="  São Paulo"></input>
                 </div>
                 <div className="cidade-container">
                     <p className="letra-form">Cidade*</p>
-                    <input className="input-cpf" placeholder="  Garulhos"></input>
+                    <input className="input-cidade-estado" placeholder="  Garulhos"></input>
                 </div>
                 <div>
                     <button className="button-next">Próximo</button>
