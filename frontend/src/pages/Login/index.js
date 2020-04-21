@@ -2,51 +2,54 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './styles.css';
 import LoginPets from '../../assets/dog.svg'
-import LogoRoxo from '../../assets/logo_branco.svg';
+import LogoRoxo from '../../assets/logo_roxo.svg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
+
 //import {FiLogIn} from 'react-icons/fi' //Usaremos para icone feathericons ---> Link do site com os nomes https://feathericons.com/
 
 export default function Login(){
     return(
       <>
-        <div class="container">
-            <div className="card-img">
-                <img src={LoginPets}  className="responsive" alt="Cachorro"/>
-            </div>
-            <div className="card-form">
-                <div className="col">
-                    <img src={LogoRoxo} className="logo" alt="All Pets"/>
-                    <h3 className="titulo">Login</h3>
-                </div>
-                <div className="col">
-                    <div>
-                        <h4 style={{color:"#FFF", paddingBottom:"10px"}}>Email</h4>
-                        <p><input type="email" className="input" placeholder="Digite seu email" required/></p> 
+        <Container className="container-login ">
+            <Row>
+                <Col className="bg-dark" xs={12} xl={6} md={12} lg={12} sm={12}><img src={LoginPets}   className="responsive"/></Col>
+                <Col className="bg-dark" xs={12} xl={6} md={12} lg={12} sm={12} style={{display:'flex', flexDirection:'column'}} >
+                    <div style={{textAlign:'center', padding:"50px 0"}}><img src={LogoRoxo}/></div>
+                    <div style={{color:'#c850c0', textAlign:'center', fontSize:'50px', fontWeight:"bold"}}>Login</div>
+                    <div style={{color:'#FFF'}}>
+                    <Form style={{padding:"30px"}}>
+                      <Form.Group controlId="formBasicEmail">
+                        <Form.Label className="titulo-label">Email</Form.Label>
+                        <Form.Control size="lg" type="email" placeholder="Digite seu email"/>
+                      </Form.Group>
+
+                      <Form.Group controlId="formBasicPassword">
+                        <Form.Label className="titulo-label">Senha</Form.Label>
+                        <Form.Control size="lg" type="password" placeholder="Digite sua senha"/>
+                      </Form.Group>
+                      <div className="container-button">
+                        <Button style={{backgroundColor:'#c850c0', border:'none',marginRight:"30px", width:"150px", height:"50px"}} type="submit">
+                          Entrar
+                        </Button>
+
+                        <Button style={{backgroundColor:'#c850c0', border:'none',  width:"150px", height:"50px"}} type="submit">
+                          Cadastrar-se
+                        </Button>
+                      </div>
+                    </Form>
                     </div>
-                    <div>
-                        <h4 style={{color:"#FFF", paddingBottom:"12px"}}>Senha</h4>
-                        <p><input type="password" className="input" placeholder="Digite sua senha" required/></p>
+                    <div className="container-link">
+                      <Link  className="titulo-link" to={"/esqueceu"}>Esqueceu a senha?</Link>
+                      <Link  className="titulo-link2" to={"/home"}>Voltar a home</Link>
                     </div>
-                    
-                    <div>
-                        <button className="button">Entrar</button>
-                        <button className="button">Cadastrar-se</button>
-                    </div>
-                   
-                </div>
-                <div className="col">
-                   <h4 className="tituloTwo"> 
-                        <Link className="tituloTwo">
-                            Esqueceu a senha?
-                       </Link>
-                    </h4> 
-                    <h4 className="tituloThree" style={{marginTop:"10px", textAlign:"center", color:"#FFF"}}> 
-                        <Link style={{textDecoration:"none", color:"#FFF"}}>
-                            Voltar a home
-                       </Link>
-                    </h4> 
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
+        </Container>
       </>
     );
 }
