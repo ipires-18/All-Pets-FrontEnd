@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Site from './pages/Institucional'
+import Login from './pages/Login';
+import Site from './pages/Institucional';
 
 
 export default function Routes(){
@@ -8,6 +9,7 @@ export default function Routes(){
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Site}></Route>
+                <Route path="/Login" exact component={Login}></Route>
             </Switch>
         </BrowserRouter>
     );

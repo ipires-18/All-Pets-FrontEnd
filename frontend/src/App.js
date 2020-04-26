@@ -1,7 +1,7 @@
 import React from 'react';
 import './global.css'
 import Routes from './routes';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
