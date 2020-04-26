@@ -13,7 +13,7 @@ import ModalForm from '../../components/Modal';
 export default function Formulario(){
     return(
       <>
-        <Container className="container-login ">
+        <Container className="container-login">
             <Row>
                 <Col className="bg-dark" xs={12} xl={6} md={12} lg={12} sm={12}><img src={LoginPets} alt="Dog" className="responsive"/></Col>
                 <Col className="bg-dark" xs={12} xl={6} md={12} lg={12} sm={12} style={{display:'flex', flexDirection:'column'}} >
