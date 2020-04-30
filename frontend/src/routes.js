@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Login from './pages/Login';
-import DashboardDono from './pages/Dashboard/TelaBuscadores/';
-
+import DashboardCuidador from './pages/Dashboard/PropostasCuidador';
+import GraficosCuidador from './pages/Dashboard/GraficosCuidador';
 
 
 export default function Routes(){
@@ -10,7 +10,8 @@ export default function Routes(){
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Login}></Route>
-                <Route path="/dashboard" component={DashboardDono}></Route>
+                <Route path="/propostas" component={DashboardCuidador}></Route>
+                <Route path="/graficos" component={GraficosCuidador}></Route>
             </Switch>
         </BrowserRouter>
     );

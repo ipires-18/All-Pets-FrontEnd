@@ -4,7 +4,7 @@ import './styles.css';
 import LogoRoxo from '../../assets/logo_roxo.svg';
 import Button from 'react-bootstrap/Button';
 
-export default function Header(){
+export default function HeaderDashboard(){
   return(
     <>
       <nav className="navbar navbar-light bg-light justify-content-between">
@@ -23,10 +23,10 @@ export default function Header(){
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" to={"/modalCuidador"}>Buscar Cuidadores</Link>
+                <Link className="nav-link" to={"/propostas"}>Propostas</Link>
               </li>
               <li class="nav-item">
-                <Link className="nav-link" to={"/contrato"}>Contratos</Link>
+                <Link className="nav-link" to={"/graficos"}>Gráficos</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/editar"}>Editar Perfil</Link>
