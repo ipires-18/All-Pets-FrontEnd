@@ -1,0 +1,46 @@
+.circu article.circus-fi, .circus-fi, .circus-se, .circus-te, .circus-qua {
+    position: relative;
+    width: 20px;
+    height: 21px;
+    
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    bottom: 325px;
+    left: 150px;      
+}
+
+
+.circu div{
+    position: relative;
+    bottom: 350px;
+    left: 200px;
+}
+
+.circu article.circus-fi{
+    background-color:rgb(211, 108, 211);
+}
+
+
+
+@media screen and (max-width: 999px) {
+    .circu div{
+        position: relative;
+        top: -950px;
+        left: 200px;
+    }
+    
+    .circu article.circus-fi, .circus-fi, .circus-se, .circus-te, .circus-qua {
+        position: relative;
+        width: 20px;
+        height: 21px;
+        
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        top: -925px;
+        left: 150px;      
+    }
+}

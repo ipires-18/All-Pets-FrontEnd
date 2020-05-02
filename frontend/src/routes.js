@@ -8,6 +8,11 @@ import CadastroSec from './pages/Cadastro-sec';
 import CadastroTer from './pages/Cadastro-ter';
 import CadastroQuat from './pages/Cadastro-quat';
 
+import CadPerfil from './pages/CadPerfil';
+import CadInfo from './pages/CadInfo';
+
+
+
 export default function Routes(){
     return(
         <BrowserRouter>
@@ -19,6 +24,11 @@ export default function Routes(){
                 <Route path="/termo"  component={CadastroQuat}></Route>
                 <Route path="/pessoa"  component={PessoaEndereco}></Route>
                 <Route path="/endereco"  component={Endereco}></Route>
+
+                
+                <Route path="/perfil" component={CadPerfil}></Route>
+                <Route path="/info" component={CadInfo}></Route>
+                
             </Switch>
         </BrowserRouter>
     );
