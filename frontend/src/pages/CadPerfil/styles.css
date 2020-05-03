@@ -1,83 +1,9 @@
-article.circus-sec{
-    background-color: rgb(167, 72, 167);
+article.circus-secs{
+    background-color: rgb(245, 102, 245);
+}
+
+.circus div.t-b{
+    color: rgb(245, 102, 245);
 }
 
 
-.card-container-perfil{
-    position: relative;
-    right: 200px;
-    bottom: 25px;
-}
-
-.circus article.circus-first, .circus-first, .circus-sec, .circus-terc, .circus-quart {
-    position: relative;
-    width: 20px;
-    height: 21px;
-    
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    bottom: 600px;
-    left: 130px;      
-}
-
-
-.circus div{
-    position: relative;
-    bottom: 624px;
-    left: 160px;
-}
-
-.titulo{
-    position: relative;
-    bottom: 630px;
-    left: 550px;
-
-  }
-
-.card-container-perfil{
-    position: relative;
-    padding: 10px;
-    bottom: 565px;
-    left: 255px;
-}
-
-.card-container-cuidador{
-    position: relative;
-    padding: 10px;
-    bottom: 325px;
-    right: 85px;
-}
-
-@media screen and (max-width: 999px) {
-.circus div{
-    position: relative;
-    top: -950px;
-    left: 200px;
-}
-
-.circus article.circus-first, .circus-first, .circus-sec, .circus-terc, .circus-quart {
-    position: relative;
-    width: 20px;
-    height: 21px;
-    
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    top: -925px;
-    left: 150px;      
-}
-
-.titulo{
-    position: relative;
-    top: -135px;
-}
-
-.card-container-perfil{
-    position: relative;
-    left: -115px;
-    bottom: 25px;
-}
-}

@@ -1,41 +1,18 @@
 import React from 'react';
+import Row from 'react-bootstrap/Row';
 import './styles.css';
-import RegisterLogo from '../../assets/logo_branco.svg';
-import RegisterPet from '../../assets/register_pets.jpg';
+import Form from 'react-bootstrap/Form';
 
-export default function Cadastro(){
+export default function Termo(){
     return(
-        <div className="register-container">
-            <section className="content">
-            <div className="fist-body">
-                <article className="body-container">
-                <img src={RegisterLogo} alt="Logo"/>
-                </article>
+        
+    <Row>
+    <div className="tits" style={{color:'#c850c0', textAlign:'center', fontSize:'30px', fontWeight:"bold", }}>
+        Finalizando o Cadastro
+    </div>
 
-                <form>
-                    <article className="circus-pt"/>
-                    <b>Informações Pessoais</b> 
-                    
-                    <article className="circus-st"/>
-                    <b>Seleciona seu perfil</b> 
-
-                    <article className="circus-tt"/>
-                    <b>Informações de Serviços</b> 
-
-                    <article className="circus-qt"/>
-                    <b>Confirmação</b> 
-                </form>
-
-                <article className="imgs-container">
-                <img src={RegisterPet} alt="All Pets"/>
-                </article>
-
-                <div className="container-termo">
-                    <h1>Finalizando o Cadastro</h1>
-                </div>
-
-                <article className="body-container-h3">
-                    <h3>Termos de Uso e Política de Privacidade</h3>
+    <article className="body-container-h3">
+                    <h4>Termos de Uso e Política de Privacidade</h4>
                 </article>
                 <div className="body-container-termo">
                     <p>Termos e Condições de Compra e Venda de All Pets, com sede na Rua Haddock Lobo, 545 - Cerqueira CésarSão Paulo - SP, doravante denominada simplesmente All Pets, e, de outro lado, o cliente All Pets, qualificado no momento da compra dos produtos All Pets, doravante denominado simplesmente Cliente.
@@ -73,23 +50,13 @@ IV.III - Em compras com cartão de crédito a administradora do cartão será no
 IV.IV - Em compras pagas com boleto bancário ou débito em conta, a restituição será efetuada por meio de depósito bancário, em até 10 (dez) dias úteis, somente na conta corrente do(a) comprador(a), que deve ser individual. É necessário que o CPF do titular da conta corrente.</p>
                 </div>
 
-                <article className="checkbox-termo">
-                    <input type="checkbox" name="termo" />
-                    <label>Estou de acordo com o termos de uso e política de privacidade.</label>
-                </article>
+                <div className="tit" style={{color:'white', textAlign:'center', fontSize:'12px', fontWeight:"bold", }}>
+                    Estou de acordo com os termos de uso e política de privacidade
+                </div>
+                <Form.Check aria-label="option 1" className="check-body"/>
+                
 
-                <div className="button-ft-container">
-                    <article className="button-f-container">
-                        <button>Próximo</button>
-                    </article>
-
-                    <article className="button-s-container">
-                        <button>Voltar</button>
-                    </article>
-                    </div>
-
-</div>
-</section>
-</div>
-        );
+    </Row>
+        
+    );
 }

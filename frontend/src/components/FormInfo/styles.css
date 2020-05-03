@@ -1,0 +1,87 @@
+.box-browse{
+    position: relative;
+    left: 649px;
+    bottom: 270px;
+}
+
+.titulo-sec{
+    position: relative;
+    color: white;
+    top: 2px;
+}
+
+.first-coluna{
+    position: relative;
+    bottom: 580px;
+    left: 688px;
+    color: white;
+}
+
+.sec-coluna{
+    position: relative;
+    bottom: 509px;
+    left: 458px; 
+}
+
+.terc-coluna{
+    position: relative;
+    bottom: 425px;
+    left: 165px;
+    color: white;
+}
+
+.bt-body{
+    position: relative;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 310px;
+    height: 60px;
+    right: 312px;
+}
+
+.titulos{
+    position: relative;
+    bottom: 620px;
+    left: 770px;
+}
+
+.born-titulo{
+    color: white;
+    position: relative;
+    bottom: 235px;
+    right: 528px;
+
+}
+
+.sex-titulo{
+    position: relative;
+    color:white;
+    bottom: 335px;
+    right: 279px;
+}
+
+.corpo-first{
+    position: relative;
+    bottom: 300px;
+    left: 690px;
+}
+
+.corpo-sec{
+    position: relative;
+    bottom: 300px;
+    left: 690px;
+}
+
+.corpo-terc{
+    position: relative;
+    bottom: 300px;
+    left: 690px;
+}
+
+.telefone-body{
+    position: relative;
+    bottom: 580px;
+    left: 110px;
+    color: white;
+}

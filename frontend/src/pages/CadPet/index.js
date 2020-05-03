@@ -1,13 +1,14 @@
 import React from 'react';
 import './styles.css';
 import BoxBody from '../../components/BoxBody';
-import FormInfo from '../../components/FormInfo';
+import FormPet from '../../components/FormPet';
 
-export default function CadInfo() {
+
+export default function CadPet(){
     return(
-        <>
+       <>
         <BoxBody />
-        <FormInfo />
-        </>
+        <FormPet />
+       </>
     );
 }

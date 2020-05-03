@@ -1,14 +1,14 @@
 import React from 'react';
-import './styles.css';
+import './styles.css'; 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import Button from 'react-bootstrap/Button';
 
+import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import RegPet from '../../assets/dog.svg';
 import PerfilLogo from '../../assets/logo_branco.svg';
-
 
 
 export default function BoxBody(){
@@ -25,6 +25,25 @@ export default function BoxBody(){
                 </article>         
          </div>
         </div>
+
+        <Form>
+            <Form.Group>
+                <form className="circus">
+                    <article className="circus-first"/> 
+                    <div style={{fontSize:'17px', fontWeight:"bold"}} className="t-a">Informações Pessoais</div>
+                    
+                    <article className="circus-secs"/>
+                    <div style={{fontSize:'17px', fontWeight:"bold"}} className="t-b">Selecione seu Perfil</div>
+
+                    <article className="circus-terc"/>
+                    <div style={{fontSize:'17px', fontWeight:"bold"}} className="t-c">Informações de Serviços</div>
+
+                    <article className="circus-quart"/>
+                    <div style={{fontSize:'17px', fontWeight:"bold"}} className="t-d">Confirmação</div>
+            
+                </form>
+            </Form.Group>
+            </Form>
            
           <div className="container-buttons">
                         <Button style={{backgroundColor:'#c850c0', border:'none',marginRight:"30px", width:"150px", height:"50px"}} type="submit">

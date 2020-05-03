@@ -4,6 +4,26 @@
 
 }
 
+.circus article.circus-fir, .circus-first, .circus-secs, .circus-terc, .circus-quart {
+  position: relative;
+  width: 20px;
+  height: 21px;
+  
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  top: 200px;
+  right: 350px;      
+}
+
+
+.circus div{
+  position: relative;
+  top: 175px;
+  right: 300px;
+  color: white;
+}
 
 .logo-body img{
     position: relative;
@@ -32,7 +52,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    top: 480px;  
+    top: 280px;  
     left: 5px;
   }
 
@@ -77,9 +97,26 @@
         height: 95px;
         top: -500px;
         left: 200px;    
-        
-    }
+      }
 
+      .circus div{
+        position: relative;
+        top: -375px;
+        left: 200px;
+    }
+    
+    .circus article.circus-first, .circus-first, .circus-secs, .circus-terc, .circus-quart {
+        position: relative;
+        width: 20px;
+        height: 21px;
+        
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        top: -350px;
+        right: -150px;      
+    }
     
     .container-buttons{
         position: relative;
@@ -91,12 +128,6 @@
       }
 
     
-
-    .titulo{
-        position: relative;
-        left: 90px;
-        bottom: 300px;
-    }
 
     
     
@@ -111,5 +142,4 @@
       justify-content: center;
     }
   }
-  
   

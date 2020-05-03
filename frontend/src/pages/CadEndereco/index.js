@@ -1,13 +1,13 @@
 import React from 'react';
-import './styles.css';
 import BoxBody from '../../components/BoxBody';
-import FormInfo from '../../components/FormInfo';
+import FormEndFirst from '../../components/FormEndFirst';
 
-export default function CadInfo() {
+
+export default function CadEndereco(){
     return(
         <>
         <BoxBody />
-        <FormInfo />
+        <FormEndFirst />
         </>
     );
 }

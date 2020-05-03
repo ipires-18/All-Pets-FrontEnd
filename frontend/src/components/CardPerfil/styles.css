@@ -1,0 +1,42 @@
+.card-container-perfil{
+    position: relative;
+    right: 200px;
+    bottom: 25px;
+}
+
+
+.titulo{
+    position: relative;
+    bottom: 630px;
+    left: 550px;
+
+  }
+
+.card-container-perfil{
+    position: relative;
+    padding: 10px;
+    bottom: 565px;
+    left: 255px;
+}
+
+.card-container-cuidador{
+    position: relative;
+    padding: 10px;
+    bottom: 325px;
+    right: 85px;
+}
+
+@media screen and (max-width: 999px) {
+.titulo{
+    position: relative;
+    top: -320px;
+    left: 190px;
+}
+
+.card-container-perfil{
+    position: relative;
+    left: -115px;
+    bottom: 25px;
+}
+}
+
