@@ -23,13 +23,16 @@ export default function Header(){
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" to={"/modalCuidador"}>Buscar Cuidadores</Link>
-              </li>
-              <li class="nav-item">
-                <Link className="nav-link" to={"/contrato"}>Contratos</Link>
+                <Link className="nav-link">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/editar"}>Editar Perfil</Link>
+                <Link className="nav-link">Quem somos</Link>
+              </li>
+              <li class="nav-item">
+                <Link className="nav-link" to={"/contrato"}>Planos</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link">Fale conosco</Link>
               </li>    
             </ul>
           </div>  

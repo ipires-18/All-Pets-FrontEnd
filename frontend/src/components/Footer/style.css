@@ -1,0 +1,18 @@
+footer{
+    height: 40vh;
+    width: 100%;
+    background-color: gray;
+    margin-top: 2%;
+}
+
+.foot-item{
+    margin-left: 20vh;
+    margin-top: 2%;
+    color: gray;
+}
+
+.foot-link{
+    
+    color: white;
+    font-weight: bold;
+}
