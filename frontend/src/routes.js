@@ -3,7 +3,6 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Login from './pages/Login';
 import Site from './pages/Institucional';
 import Dashboard from './pages/Dashboard/TelaBuscadores';
-import Cadastro from './pages/Cadastro';
 import CadPerfil from './pages/CadPerfil';
 import CadInfo from './pages/CadInfo';
 import CadEndereco from './pages/CadEndereco';
@@ -19,9 +18,6 @@ export default function Routes(){
                 <Route path="/" exact component={Site}></Route>
                 <Route path="/Login"  component={Login}></Route>
                 <Route path="/Dashboard" component={Dashboard}></Route>
-                <Route path="/" exact component={Login}></Route>
-                <Route path="/cadastrar"  component={Cadastro}></Route>
- 
                 <Route path="/perfil" component={CadPerfil}></Route>
                 <Route path="/info" component={CadInfo}></Route>
                 <Route path="/endereco"  component={CadEndereco}></Route>
@@ -29,7 +25,6 @@ export default function Routes(){
                 <Route path="/termo"  component={CadTermo}></Route>
                 <Route path="/pet"  component={CadPet}></Route>
                 <Route path="/cuidador"  component={CadCuidador}></Route>
-
             </Switch>
         </BrowserRouter>
     );
