@@ -1,0 +1,162 @@
+.register-container {
+    width: 100%;
+    max-width: 999px;
+    height: 100vh;
+    margin: 0 10px 10px 175px; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.register-container .content {
+    width: 100%;
+    height: 90%;
+    
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-container .content section {
+    width: 100%;
+    max-width: 380px;
+}
+
+.register-container article.imgs-container img{
+    position: relative;
+    margin-top: 20px;
+    float:left;
+    width:300px; 
+    height:250px;  
+    bottom: 0;
+    opacity: 0.5; 
+    top: 15px;  
+}
+
+.register-container div.fist-body{
+    border: 1px solid #9c27b0;
+    background-color: #9C27B0;
+    padding: 100px 0 0 0;
+    border-radius: 1%;  
+    bottom: 20px;
+    height: 100%;
+    width: 30.2%;
+}
+
+.register-container article.body-container img{
+    position: relative;
+    width: 90%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+    bottom: 45px;
+    left: 15px;    
+}
+
+.register-container article.circus-pt, .circus-st, .circus-tt, .circus-qt {
+    position: relative;
+    width: 20px;
+    height: 21px;
+    
+    border-radius: 50%;
+    background-color:rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    left: 60px;      
+}
+
+.register-container article.circus-qt{
+    background-color: white;
+}
+
+.register-container form b{
+    position: relative;
+    color: white;
+
+    bottom: 9px;
+    left: 90px;
+}
+
+.register-container div.container-termo h1{
+    position: relative;
+    color: #9c27b0;
+    bottom: 540px;
+    left: 550px;
+}
+
+.register-container article.body-container-h3 h3{
+    position: relative;
+    color: #5c5c5c;
+    bottom: 500px;
+    left: 350px;
+}
+
+.register-container div.body-container-termo{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 2px;
+    
+    width: 200%;
+    height: 70%;
+
+    padding: 20px 20px 20px 20px;
+    bottom: 500px;
+    left: 350px;
+
+    z-index:1; 
+    overflow: auto;
+}
+
+.register-container article.checkbox-termo{
+    padding: 10px 10px 10px 20px;
+    position: relative;
+    width: 600px;
+    height: 25px;
+    left: 350px;
+    bottom: 490px;
+}
+
+.register-container article.checkbox-termo label{
+    position: relative;
+    left: 6px;
+    bottom: 1px;
+}
+
+.register-container div.button-ft-container {
+    position: relative;
+    bottom: 680px;
+    left: 450px;
+    display: flex;
+}
+
+.register-container article.button-f-container button{
+    position: relative;
+    font-size: 20px;
+    padding: 14px 40px;
+    background-color: #5E136A;
+    color: white;  
+
+    top: 210px;
+    border-radius: 8px;    
+}
+
+.register-container article.button-s-container button{
+    position: relative;
+    height: 100%;
+    font-size: 20px;
+    padding: 14px 40px;
+    background-color: #5E136A;
+    color: white;
+
+    border-radius: 8px;
+
+    top: 210px;
+    left: 100px;
+}

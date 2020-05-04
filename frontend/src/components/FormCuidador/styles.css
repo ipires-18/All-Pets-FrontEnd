@@ -1,0 +1,80 @@
+.body-dias-check{
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 400px;
+    height: 80px;
+    padding: 10px;
+    bottom: 590px;
+    left: 490px;
+    color: white;
+}
+
+.c-s{
+    position: relative;
+    left: 5px;
+}
+
+.c-t{
+    position: relative;
+    left: 110px; 
+    bottom: 24px;  
+}
+
+.c-q{
+    position: relative;
+    left: 195px; 
+    bottom: 48px;   
+}
+
+.c-qq{
+    position: relative;
+    left: 285px; 
+    bottom: 73px;   
+}
+
+.c-ss{
+    position: relative;
+    left: 5px; 
+    bottom: 62px;  
+}
+
+.c-sab{
+    position: relative;
+    left: 110px; 
+    bottom: 85px;
+}
+
+.c-dom{
+    position: relative;
+    left: 195px; 
+    bottom: 108px;
+}
+
+.ini-titulo{
+    position: relative;
+    bottom: 580px;
+    left: 495px;
+    color: white;
+}
+
+.body-ini{
+    position: relative;
+    width: 100px;
+    bottom: 570px;
+    left: 498px;
+}
+
+.fim-titulo{
+    position: relative;
+    bottom: 658px;
+    left: 695px;
+    color: white;
+}
+
+.body-fim{
+    position: relative;
+    width: 100px;
+    bottom: 648px;
+    left: 698px;
+}

@@ -1,0 +1,57 @@
+.h1-pet{
+    position: relative;
+    left:220px;
+    bottom: 610px;
+}
+
+.bts-body{
+    position: relative;
+    border: 1px solid gray;
+    width: 215px;
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 580px;
+    left: 480px;
+
+}
+
+.sex-t{
+    position: relative;
+    color: white;
+    bottom: 580px;
+    left: 485px;
+}
+
+.body-check-porte{
+    position: relative;
+   
+    bottom: 940px;
+    padding: 10px;
+    width: 100px;
+    left: 780px;
+    color: #c850c0;
+
+}
+
+.body-check-med{
+    position: relative;
+    color: #c850c0;
+    bottom: 910px;
+    
+    left: 770px;
+    width: 100px;   
+}
+
+.med-titulo{
+    position: relative;
+    bottom: 1005px;
+    left: 735px;
+    color: white;
+}
+
+.body-med{
+    position: relative;
+    width: 100px;
+    bottom: 1000px;
+    left: 740px;
+}

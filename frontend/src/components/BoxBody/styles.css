@@ -1,0 +1,145 @@
+.container-body{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.circus article.circus-fir, .circus-first, .circus-secs, .circus-terc, .circus-quart {
+  position: relative;
+  width: 20px;
+  height: 21px;
+  
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  top: 200px;
+  right: 350px;      
+}
+
+
+.circus div{
+  position: relative;
+  top: 175px;
+  right: 300px;
+  color: white;
+}
+
+.logo-body img{
+    position: relative;
+    height: 90px;
+    
+    top: 80px;
+    right: 325px;
+   
+}
+
+.pet-body img{
+    position: relative;
+    height: 200px;
+    
+    right: 60%;
+}
+
+.responsives{
+    position: relative;
+    
+    height: 100%;
+    
+}
+
+.container-buttons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 280px;  
+    left: 5px;
+  }
+
+  .col-lg-6.col-12{
+    padding: 0;
+    margin: 0;
+  }
+  .col-xl-6.col-12{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .col-md-6.col-12{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .col-sm-12.col-12{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .col-sx-12.col-12{
+    padding: 0;
+    margin: 0;
+  }
+@media screen and (max-width: 999px) {
+    .responsives {
+      position: relative;
+      top: 450px;  
+      width: 100%;
+      border-bottom: 1px solid #c850c0;
+      margin: 0 auto;
+    }
+    .container-button{
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo-body img{
+        position: relative;
+        height: 95px;
+        top: -500px;
+        left: 200px;    
+      }
+
+      .circus div{
+        position: relative;
+        top: -375px;
+        left: 200px;
+    }
+    
+    .circus article.circus-first, .circus-first, .circus-secs, .circus-terc, .circus-quart {
+        position: relative;
+        width: 20px;
+        height: 21px;
+        
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        top: -350px;
+        right: -150px;      
+    }
+    
+    .container-buttons{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        left: 10px;
+        top: -15px;
+        
+      }
+
+    
+
+    
+    
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .responsives {
+      width: 100%;
+      border-bottom: 1px solid #c850c0;
+    }.container-button{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  

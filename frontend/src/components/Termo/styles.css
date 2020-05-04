@@ -1,0 +1,43 @@
+.tits{
+    position: relative;
+    left: 750px;
+    bottom: 615px; 
+}
+
+
+article.body-container-h3 h4{
+    position: relative;
+    color: white;
+    bottom: 490px;
+    left: 380px;
+    font-size: 20px;
+}
+
+div.body-container-termo{
+    position: relative;
+    border: 2px solid #9C27B0;
+    border-radius: 2px;
+    
+    color: white;
+    width: 400px;
+    height: 200px;
+
+    padding: 20px 20px 20px 20px;
+    bottom: 450px;
+    left: 40px;
+
+    z-index:1; 
+    overflow: auto;
+}
+
+.tit{
+    position: relative;
+    bottom: 440px;
+    left: 750px;
+}
+
+.check-body{
+    position: relative;
+    left: 380px;
+    bottom: 444px;
+}
