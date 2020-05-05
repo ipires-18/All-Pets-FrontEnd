@@ -79,8 +79,8 @@ const CardTermos = () => {
                           </MDBCol>
                         </MDBRow>
                         <MDBCardTitle tag='h3' className='pt-2'>
-                            <Link  to="/perfil"> <ButtonRoxo nome="Voltar" color="#BAA8A8"/></Link>  
                             <Link to="/login"> <ButtonRoxo nome="Confirmar" color="#c850c0"/></Link>  
+                            <Link  to="/perfil"> <ButtonRoxo nome="Voltar" color="#BAA8A8"/></Link>  
                         </MDBCardTitle>
                       </Form>
                     </MDBContainer>
