@@ -1,0 +1,71 @@
+/*  ALL BUTTONS */
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  border: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 12px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+}
+.btn:focus, .btn:focus::after {
+  outline: none;
+}
+.btn:active {
+  transform: translateY(2px);
+}
+
+/*  BUTTON GREEN */
+.btn-flip {
+  overflow: hidden;
+  background-image: linear-gradient(to right, #26E089, #00B297);
+}
+.btn-flip > * {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  transition: all .4s;
+}
+.btn-flip__visible {
+  padding: 15px 75px;
+}
+.btn-flip__invisible {
+  position: absolute;
+  padding: 15px 0;
+  left: 0;
+  top: -100%;
+}
+.btn-flip:hover .btn-flip__visible {
+  transform: translateY(100%);
+}
+.btn-flip:hover .btn-flip__invisible {
+  top: 0;
+}
+
+/*  BUTTON PINK  */
+.btn-pulse {
+  padding: 15px 75px;
+  background-image: linear-gradient(to right, #FF5F87, #FB0779);
+  z-index: 1;
+}
+.btn-pulse::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border: inherit;
+  top: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+  transition: all .5s;
+}
+.btn-pulse:hover::after {
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
+}

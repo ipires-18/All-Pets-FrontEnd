@@ -1,0 +1,121 @@
+/* CSS LOGIN RESPONSIVO */
+.container-login {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.col-lg-6.col-12{
+  padding: 0;
+  margin: 0;
+}
+.col-xl-6.col-12{
+  padding: 0;
+  margin: 0;
+}
+
+.col-md-6.col-12{
+  padding: 0;
+  margin: 0;
+}
+
+.col-sm-12.col-12{
+  padding: 0;
+  margin: 0;
+}
+
+.col-sx-12.col-12{
+  padding: 0;
+  margin: 0;
+}
+
+.container-button{
+  display: flex;
+  justify-content: center;
+
+}
+
+.container-link{
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.titulo-link{
+  color:#c850c0;
+  font-size: '8px';
+  font-weight: 700;
+  padding-right: 100px;
+  text-decoration: none;
+}
+
+
+
+.titulo-link2{
+  color:#c850c0;
+  font-size: '8px';
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
+.titulo-link:hover, .titulo-link2:hover{
+  color:purple
+}
+
+
+.style-button{
+  background-color: #c850c0;
+  border:none;
+  
+}
+
+.titulo-label{
+  color:#c850c0;
+  text-align: center;
+  font-size: '15px';
+  margin: 5px;
+  font-weight: 700;
+}
+
+.responsive {
+  
+  height: 100%;
+ 
+  padding: 10px;
+ 
+}
+
+
+@media screen and (max-width: 999px) {
+  .responsive {
+    width: 100%;
+    border-bottom: 1px solid #c850c0;
+    margin: 0 auto;
+  }
+  .container-button{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (max-width: 1199px) {
+  .responsive {
+    width: 100%;
+    border-bottom: 1px solid #c850c0;
+  }.container-button{
+    display: flex;
+    justify-content: center;
+  }
+}
