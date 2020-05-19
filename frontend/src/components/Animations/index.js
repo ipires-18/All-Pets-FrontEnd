@@ -1,13 +1,8 @@
 import React from "react";
-import { MDBAnimation } from "mdbreact";
-import LogoRoxo from '../../assets/logobranco.svg';
+import LogoBranco from '../../assets/logobranco.svg';
 
-const AnimationPage = () => {
-    return (
-        <MDBAnimation type="bounce" infinite>
-               <img src={LogoRoxo} alt=""/><br />
-        </MDBAnimation>
-    );
-};
+
+const AnimationPage = ({tamanho}) => <img src={LogoBranco} alt="All PETS" 
+width={tamanho} />
 
 export default AnimationPage;

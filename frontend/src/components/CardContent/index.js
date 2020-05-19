@@ -15,10 +15,10 @@ const CardExample = () => {
                 <MDBIcon icon='chart-pie' /> Cuidador
               </h5>
               <MDBCardTitle tag='h3' className='pt-2'>
-                <strong>Gráficos</strong>
+                <strong>Historico de Serviços</strong>
               </MDBCardTitle>
               <p>
-                Você cuidador poder ver atraves de gráficos
+                Você cuidador pode ver atraves de um historico
                 os seus rendimentos que teve no ultimo mês,
                 a quantidade de serviços prestados e quantas
                 horas já trabalhos nesses periodos
@@ -57,7 +57,7 @@ const CardExample = () => {
           <div className='text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4'>
             <div>
               <h5 className='pink-text'>
-                <MDBIcon icon='chart-pie' /> Cuidador
+                <MDBIcon icon='chart-pie' /> Dono de Animais
               </h5>
               <MDBCardTitle tag='h3' className='pt-2'>
                 <strong>Buscar Cuidadores</strong>

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Banner from '../../assets/banner.svg';
 import Logo from '../Animations/index';
 import ButtonRoxo from '../ButtonRoxo/index';
-import CardBusca from '../CardBusca/index';
 import CardContent from '../CardContent/index';
 
 
@@ -47,7 +46,7 @@ class FullPageIntroWithNonFixedTransparentNavbar extends React.Component {
                 </MDBContainer>
               </MDBNavbar>
             <div className="flex-center flex-column text-white text-center">
-                <Logo/>
+                <Logo/><br/>
                 <h5 style={{fontWeight:'bold'}}>Bem - Vindos</h5><br />
               <p style={{fontWeight:'bold'}}>Um serviços para donos de animais e cuidadores</p>
             </div>
@@ -55,9 +54,7 @@ class FullPageIntroWithNonFixedTransparentNavbar extends React.Component {
         </header>
 
         <main>
-          <MDBContainer className="text-center my-5">
-            <CardBusca/>
-          </MDBContainer>
+       
           <MDBContainer className="text-center my-5">
             <CardContent/>
           </MDBContainer>
