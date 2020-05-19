@@ -6,7 +6,7 @@ const PainelResultado = () => {
   return (
     <>
       <NavPainel/>
-      Tela de Propostas
+      <h1>Tela de Propostas</h1> 
     </>
   )
 }
