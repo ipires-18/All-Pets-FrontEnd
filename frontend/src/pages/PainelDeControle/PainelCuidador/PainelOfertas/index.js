@@ -6,7 +6,7 @@ const PainelOfertas = () => {
   return (
     <>
       <NavPainelCuidador/>
-      Tela Ofertas Cuidador
+     <h1>Tela Ofertas Cuidador</h1> 
     </>
   )
 }
