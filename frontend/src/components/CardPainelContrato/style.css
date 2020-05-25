@@ -1,0 +1,102 @@
+.container-contrato{
+    margin-top: 3%;
+    display: flex;
+    background-color: white;
+    min-height: 64vh;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 10px;
+}
+
+.info-pessoais{
+    margin-left: 8vh;
+}
+
+.info-pessoais-p{
+    display: flex;
+    margin-top: 23%;
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 20px;
+    color:rgb(82, 81, 81);
+    text-align: left;
+}
+
+.font-info-title-p{
+    display: flex;
+    margin-top: 9%;
+    font-family: "Roboto Bold", sans-serif;
+    color:#5C5C5C;
+    font-size: 16px;
+}
+
+.font-info-resp-p{
+    display: flex;
+    margin-top: 0.1%;
+    font-family: "Roboto Bold", sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.info-servico{
+    margin-left: 8vh;
+}
+
+.info-servico-s{
+    display: flex;
+    margin-top: 22%;
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 20px;
+    color:rgb(82, 81, 81);
+    text-align: left;
+}
+
+.font-info-title-s{
+    display: flex;
+    margin-top: 9%;
+    font-family: "Roboto Bold", sans-serif;
+    color:#5C5C5C;
+    font-size: 16px;
+}
+
+.font-info-resp-s{
+    display: flex;
+    margin-top: 0.1%;
+    font-family: "Roboto Bold", sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.status{
+    margin-left: 12vh;
+    margin-top: 27%;
+}
+
+.status-title{
+    display: flex;
+    color: rgb(58, 58, 58);
+    font-family: "Roboto Bold", sans-serif;
+}
+
+.status-resp{
+    display: flex;
+    color: black;
+    background-color: yellow;
+}
+
+.button-status{
+    display: flex;
+    background: rgba(92, 92, 92, 0.5);
+    height: 7.5vh;
+    width: 26vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 36vh;
+}
+
+.cancel{
+    font-family: "Roboto Bold", sans-serif;
+    color: white;
+    letter-spacing: 1.3px;
+    font-size: 3.5vh;
+    margin-left: 5vh;
+    margin-top: 0.5vh;
+}
