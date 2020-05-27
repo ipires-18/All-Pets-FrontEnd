@@ -8,7 +8,6 @@ const PainelContrato = () => {
     <>
       <NavPainel/>
       <CardPainelContrato/>
-      <Footer/>
     </>
   )
 }

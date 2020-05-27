@@ -13,20 +13,20 @@ const CardPainelContrato = () =>{
                     <div className="info-pessoais">
                         <p className="info-pessoais-p">Informações Pessoais</p>
                         <p className="font-info-title-p">Nome</p>
-                        <p className="font-info-resp-p">Katia Silva</p>
+                        <input className="font-info-resp-p" placeholder="Katia Silva"></input>
                         <p className="font-info-title-p">Região</p>
-                        <p className="font-info-resp-p">Vila Ede - Centro - SP</p>
+                        <input className="font-info-resp-p" placeholder="Vila Ede - Centro - SP"></input>
                         <p className="font-info-title-p">Graduação</p>  
-                        <p className="font-info-resp-p">Tecnico em Veterinária</p>                    
+                        <input className="font-info-resp-p" placeholder="Tecnico em Veterinária"></input>                    
                     </div>
                     <div className="info-servico">
                         <p className="info-servico-s">Informações de Serviço</p>
                         <p className="font-info-title-s">Especialidade</p>
-                        <p className="font-info-resp-s">Labrador</p>
+                        <input className="font-info-resp-s" placeholder="Labrador"></input>
                         <p className="font-info-title-s">Dias Disponiveis</p>
-                        <p className="font-info-resp-s">Seg, Ter</p>
+                        <input className="font-info-resp-s" placeholder="Seg, Ter"></input>
                         <p className="font-info-title-s">Horário</p>  
-                        <p className="font-info-resp-s">8:00h ás 22:00h</p>                    
+                        <input className="font-info-resp-s" placeholder="8:00h ás 22:00h"></input>                    
                     </div>
                     <div className="status">
                         <h3 className="status-title">Status</h3>

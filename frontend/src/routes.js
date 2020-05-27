@@ -13,7 +13,9 @@ import CadastroCuidador from '../src/pages/Cadastro/CadastroCuidador';
 import CadastroTermos from '../src/pages/Cadastro/CadastroTermos';
 import PainelCuidador from '../src/pages/PainelDeControle/PainelDono/PainelResultado';
 import PainelContrato from '../src/pages/PainelDeControle/PainelDono/PainelContrato';
-import PainelEditarPerfil from '../src/pages/PainelDeControle/PainelDono/PainelEditarPerfil';
+import EditarDadosPessoais from './pages/PainelDeControle/PainelDono/PainelEditarPerfil/EditarDadosPessoais';
+import EditarEndereco from './pages/PainelDeControle/PainelDono/PainelEditarPerfil/EditarEndereco';
+import EditarDadosPet from './pages/PainelDeControle/PainelDono/PainelEditarPerfil/EditarDadosPet';
 import PainelOferta from '../src/pages/PainelDeControle/PainelCuidador/PainelOfertas';
 import PainelHistorico from '../src/pages/PainelDeControle/PainelCuidador/PainelHistorico';
 import PainelEditarPerfilCui from '../src/pages/PainelDeControle/PainelCuidador/PainelEditarPerfilCuidador';
@@ -35,7 +37,9 @@ export default function MainRoutes(){
                 <Route path="/login"  component={Login}/>
                 <Route path="/propostas" component={PainelCuidador}/>
                 <Route path="/contratos" component={PainelContrato}/>
-                <Route path="/perfilDono" component={PainelEditarPerfil}/>
+                <Route path="/perfilDono" component={EditarDadosPessoais}/>
+                <Route path="/perfilDono/endereco" component={EditarEndereco}/>
+                <Route path="/perfilDono/pet" component={EditarDadosPet}/>
                 <Route path="/ofertas" component={PainelOferta}/> 
                 <Route path="/historico" component={PainelHistorico}/> 
                 <Route path="/perfilCui" component={PainelEditarPerfilCui}/> 
