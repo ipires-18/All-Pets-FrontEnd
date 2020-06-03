@@ -1,0 +1,164 @@
+.body-cont{
+    position: relative;
+    color: gray;
+    background-color: white;
+
+    border: 1px solid black;
+    border-radius: 13px;
+
+    top: 45px;
+    height: 1000px;
+    margin-bottom: 105px;
+    
+}
+
+.text-body-cont{
+    font-Weight:bold;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+.cont-body-form{
+    position: relative;
+    width: 60%;
+    margin-top: 45px;
+    margin-left: 250px;
+}
+
+.cont-font-coluna{
+    position: relative;
+    left: 250px;
+    width: 61%; 
+}
+
+.text-cont{
+    position: relative;
+    font-Weight:bold;
+
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    bottom: 5px;
+    left: 250px;
+}
+
+.text-body-congrat{
+    font-weight: bold;
+    color: rgb(185, 68, 185);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cont-body-client{
+    position: relative;
+    left: 250px;
+    width: 60%; 
+}
+
+
+
+.cont-font-col{
+    position: relative;
+    left: 250px;
+    width: 60.7%; 
+}
+
+.button-reject{
+    position: relative;
+    left: 300px;
+    border-radius: 5px;
+    height: 50px;
+    width: 250px;
+}
+
+.button-acept{
+    position: relative;
+    left: 350px;
+    border-radius: 2px;
+    width: 250px;
+}
+
+
+@media screen and (max-width: 999px) {
+    .cont-body-form{
+        position: relative;
+        width: 385px;
+        right: 230px;
+    }
+
+    .cont-font-coluna{
+        position: relative;
+        left: 20px; 
+        width: 395px;
+        
+    }
+
+    .cont-body-client{
+        position: relative;
+        left: 20px;
+        width: 385px;
+    }
+
+    .cont-font-col{
+        position: relative;
+        left:  20px;
+        width: 390px;
+    }
+
+    .button-reject{
+        position: relative;
+        left: 35px;
+        width: 160px;
+    }
+
+    .button-acept{
+        position: relative;
+        left: 50px;
+        width: 160px;
+    }
+
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .cont-body-form{
+        position: relative;
+        width: 385px;
+        right: 230px;
+    }
+
+    .cont-font-coluna{
+        position: relative;
+        left: 20px; 
+        width: 395px;
+        
+    }
+
+    .cont-body-client{
+        position: relative;
+        left: 20px;
+        width: 385px;
+    }
+
+    .cont-font-col{
+        position: relative;
+        left:  20px;
+        width: 390px;
+    }
+
+    .button-reject{
+        position: relative;
+        left: 35px;
+        width: 160px;
+    }
+
+    .button-acept{
+        position: relative;
+        left: 50px;
+        width: 160px;
+    }
+
+  }
+  
+  
