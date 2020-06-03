@@ -1,6 +1,7 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
-import { MDBNav, MDBNavItem, MDBNavLink,MDBNavbarNav } from "mdbreact";
+import { MDBNav, MDBNavLink } from "mdbreact";
 
 export default () => (
   <BrowserRouter>
@@ -9,7 +10,7 @@ export default () => (
       <MDBNavLink active to="/propostas" className="black-text"> <strong>Cuidadores</strong> </MDBNavLink>
       <MDBNavLink to="/contratos" className="black-text"><strong>Contratos</strong></MDBNavLink>
       <MDBNavLink to="/perfilDono" className="black-text"><strong>Editar Perfil</strong></MDBNavLink>
-      <MDBNavLink to="#!" className="black-text"><strong>Sair</strong></MDBNavLink>
+      <MDBNavLink to="#!" className="black-text"><strong><Link to="/">Sair</Link></strong></MDBNavLink>
     </MDBNav>
 
   </BrowserRouter>

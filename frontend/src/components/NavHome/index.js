@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBView } from 'mdbreact';
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBContainer, MDBView } from 'mdbreact';
 import { Link } from 'react-router-dom';
 import Banner from '../../assets/banner.svg';
 import Logo from '../Animations/index';
@@ -36,10 +36,10 @@ class FullPageIntroWithNonFixedTransparentNavbar extends React.Component {
                   <MDBCollapse isOpen={this.state.collapse} navbar>
                     <MDBNavbarNav right>
                       <MDBNavItem >
-                        <Link to="/login"><ButtonRoxo nome="Entrar" color="#BAA8A8"/></Link>
+                        <Link to="/login"><ButtonRoxo nome="Entrar" color="#FFF"/></Link>
                       </MDBNavItem>
                       <MDBNavItem >
-                        <Link to="/cadastro"><ButtonRoxo nome="Cadastro" color="#ECB1F6"/></Link>
+                        <Link to="/registro"><ButtonRoxo  nome="Cadastro" color="#9C27B0"/></Link>
                       </MDBNavItem>
                     </MDBNavbarNav>
                   </MDBCollapse>

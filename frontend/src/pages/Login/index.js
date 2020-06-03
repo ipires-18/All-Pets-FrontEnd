@@ -1,14 +1,9 @@
 import React from 'react';
+import FormularioLogin from '../../components/FormularioLogin';
 
-import CardLogin from '../../components/CardLogin';
 
-
-const Login = () => {
-  return (
-   <>
-      <CardLogin/>
-   </>
+export default function Login(){
+  return(
+    <FormularioLogin/>
   )
 }
-
-export default Login;

@@ -1,6 +1,5 @@
 import React from 'react';
-import { MDBCard, MDBCardTitle, MDBBtn, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
-import BannerCard from '../../assets/banner2.svg';
+import { MDBCard, MDBCardTitle, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
 
 const CardExample = () => {
   return (
