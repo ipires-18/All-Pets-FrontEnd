@@ -38,8 +38,8 @@ export default function MainRoutes(){
                 <Route path="/propostas" component={PainelCuidador}/>
                 <Route path="/contratos" component={PainelContrato}/>
                 <Route path="/perfilDono" component={EditarDadosPessoais}/>
-                <Route path="/perfilDono/endereco" component={EditarEndereco}/>
-                <Route path="/perfilDono/pet" component={EditarDadosPet}/>
+                <Route path="/editarEndereco" component={EditarEndereco}/>
+                <Route path="/editarPet" component={EditarDadosPet}/> 
                 <Route path="/ofertas" component={PainelOferta}/> 
                 <Route path="/historico" component={PainelHistorico}/> 
                 <Route path="/perfilCui" component={PainelEditarPerfilCui}/> 
