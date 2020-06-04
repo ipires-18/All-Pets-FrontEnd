@@ -1,4 +1,43 @@
 .container-editar-endereco{
+    display: flex;
     background-color: #fff;
     min-height: 64vh;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.font-dados-endereco{
+    display: flex;
+    font-family: "Roboto Bold", sans-serif;
+    color: #5c5c5c;
+    font-size: 16px;
+    margin-top: 2vh;
+}
+
+.div-dado-endereco-1{
+    margin-right: 20vh;
+}
+
+.input-endereco{
+    width: 320px;
+}
+
+.button-salvar{
+    display: flex;
+    height: 50px;
+    width: 320px;
+    border-radius: 7px;
+    background-color: #B42DCC;
+    color: white;
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 3.0vh;
+    margin-top: 6vh;
+}
+
+.salvar{
+    font-family: "Roboto Bold", sans-serif;
+    color: white;
+    font-size: 3vh;
+    margin-left: 18vh;
+    margin-top: 1vh;
 }
