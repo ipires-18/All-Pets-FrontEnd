@@ -1,25 +1,25 @@
-.container-editar-endereco{
+.container-pet{
     display: flex;
     background-color: #fff;
-    min-height: 64vh;
+    min-height: 66.5vh;
     border: 1px solid rgb(160, 160, 160);
     border-radius: 0px 0px 10px 10px;
 }
 
-.font-dados-endereco{
+.font-dados-pet{
     display: flex;
     font-family: "Roboto Bold", sans-serif;
     color: #5c5c5c;
     font-size: 16px;
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
-.div-dados-endereco-1{
-    margin-right: 20vh;
-}
-
-.input-endereco{
+.input-pet{
     width: 320px;
+}
+
+.div-dados-pet-1{
+    margin-right: 20vh;
 }
 
 .button-salvar{
@@ -31,7 +31,7 @@
     color: white;
     font-family: "Roboto Bold", sans-serif;
     font-size: 3.0vh;
-    margin-top: 6vh;
+    margin-top: 5vh;
 }
 
 .salvar{

@@ -18,7 +18,7 @@ const CardEditarDono = () =>{
                     </div>
                     <div className="div-dados-dono-2">
                         <p className="font-dados-dono" style={{marginTop:"5vh"}}>E-mail</p>
-                        <input className="input-dono" placeholder="E-mail"/>
+                        <input className="input-dono" placeholder="ex: example@example.com"/>
                         <p className="font-dados-dono">Nova Senha</p>
                         <input className="input-dono" placeholder="Nova Senha"/><br/>
                         <button className="button-salvar">Salvar</button>
