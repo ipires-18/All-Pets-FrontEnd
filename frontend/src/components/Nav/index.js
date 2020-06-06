@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
 import { MDBNav, MDBNavLink } from "mdbreact";
 
-export 
 
 export default () => (
   <BrowserRouter>
