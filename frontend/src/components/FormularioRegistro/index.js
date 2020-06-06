@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 import logoImg from '../../assets/logo-roxo.svg';
 import {Link} from 'react-router-dom';
@@ -6,8 +6,6 @@ import {FiArrowLeft} from 'react-icons/fi';
 import bannerImg from '../../assets/perfil.svg';
 import api from '../../services/api';
 import swal from 'sweetalert';
-
-
 
 const FormularioRegistro = () => {
   
@@ -44,23 +42,16 @@ const FormularioRegistro = () => {
 
    const resposta = await api.post('donos', data);
 
-   console.log(resposta.config.data)
- 
     try{
+
       swal("Cadastro", "Realizado com sucesso!", "success");
 
-    
-
     }catch(error){
-        alert("Error no cadastro tente novamente");
+
+      swal("Cadastro", "Error no cadastro tente novamente", "error");
+
     }}
     
-    useEffect(() => {
-      api.get('donos').then(response => {
-          console.log(response.data);
-      })
-  },[])
-
 return (
   <>
   <div className="registrer-container">
@@ -74,8 +65,6 @@ return (
           <option value={0}>Escolha seu Perfil</option>
           <option value={1}>Dono de Animais</option>
           <option value={2}>Cuidador de Animais</option>
-          
-         
         </select>
         <Link className="ancora2" to="/login">
         <FiArrowLeft size={16} color="#9C27B0"/>
@@ -98,59 +87,9 @@ return (
         </>
       }
 
-      {typeUser == 2 &&  
-         <form className="formStyle" action="/" onSubmit={handleRegister}>
-            <h1 style={{marginTop:5}}>Informações Pessoais</h1>
-            
-            <label htmlFor="nome">Nome</label>
-            <input id="nome" type="text" placeholder="Digite seu nome" value={name} 
-            onChange={(e) => setName(e.target.value)} required/>
-
-            <label htmlFor="email">Email</label>
-            <input id="email" type="email" placeholder="Digite seu email" value={email} 
-            onChange={(e) => setEmail(e.target.value)} required/>
-
-            <label htmlFor="senha">Senha</label>
-            <input  id="senha" type="password" placeholder="Digite sua senha" value={password} 
-            onChange={(e) => setPassword(e.target.value)} required/>
-
-            <label htmlFor="rg">RG</label>
-            <input  id="rg" type="text" placeholder="Digite seu RG" value={rg}
-             onChange={(e) => setRg(e.target.value)} required/>
-
-            <label htmlFor="cpf">CPF</label>
-            <input  id="cpf" type="number" placeholder="Digite seu CPF" value={cpf}
-             onChange={(e) => setCpf(e.target.value)} required/>
-
-            <label htmlFor="whatsapp">WhatsApp</label>
-            <input id="whatsapp" type="number" placeholder="Digite seu whatsapp" value={whatsapp} 
-            onChange={(e) => setWhatsapp(e.target.value)} required/>
-            
-            <label htmlFor="graduacao">Graduação</label>
-            <input id="graduacao" type="text" placeholder="Digite sua graduação" value={graduacao}
-             onChange={(e) => setGraduacao(e.target.value)} required/>
-
-            <label htmlFor="Valor">Valor da Hora</label>
-            <input id="Valor" type="number" placeholder="R$ " value={valueTime}
-             onChange={(e) => setValueTime(e.target.value)} required/>
-
-            <label htmlFor="Valor">Nascimento</label>
-            <input id="date" type="date" value={birthDate}
-             onChange={(e) => setBirthDate(e.target.value)} required/>
-
-            <label htmlFor="sexo">Sexo</label>
-            <select id="sexo" style={{marginTop:10}} onChange={(e) => setSex(e.target.value)}>
-              <option value="">Selecione seu Sexo</option>
-              <option value={"M"}>Masculino</option>
-              <option value={"F"}>Feminino</option>
-            </select>
-            <button className="button" type="submit">Cadastrar-se</button>
-          </form>
-      }
-
 
         {typeUser == 1 &&  
-         <form className="formStyle" action="/pet" onSubmit={handleRegister}>
+         <form className="formStyle" onSubmit={handleRegister}>
           
             <h1 style={{marginTop:5}}>Informações Pessoais</h1>
 
@@ -164,19 +103,19 @@ return (
 
             <label htmlFor="senha">Senha</label>
             <input  id="senha" type="password" placeholder="Digite sua senha" value={password} 
-            onChange={(e) => setPassword(e.target.value)} required/>
+            onChange={(e) => setPassword(e.target.value)} minLength="8" required/>
 
             <label htmlFor="rg">RG</label>
             <input  id="rg" type="text" placeholder="Digite seu RG" value={rg}
-             onChange={(e) => setRg(e.target.value)} required/>
+             onChange={(e) => setRg(e.target.value)} minLength="9" required/>
 
             <label htmlFor="cpf">CPF</label>
             <input  id="cpf" type="number" placeholder="Digite seu CPF" value={cpf}
-             onChange={(e) => setCpf(e.target.value)} required/>
+             onChange={(e) => setCpf(e.target.value)} minLength="11" required/>
 
             <label htmlFor="whatsapp">WhatsApp</label>
             <input id="whatsapp" type="number" placeholder="Digite seu whatsapp" value={whatsapp} 
-            onChange={(e) => setWhatsapp(e.target.value)} required/>
+            onChange={(e) => setWhatsapp(e.target.value)} minLength="11" required/>
             
             <label htmlFor="Valor">Nascimento</label>
             <input id="date" type="date" value={birthDate}
@@ -191,7 +130,57 @@ return (
             <button className="button" type="submit">Cadastrar-se</button>
           </form>
         }
-     
+
+        {typeUser == 2 &&  
+          <form className="formStyle" onSubmit={handleRegister}>
+              <h1 style={{marginTop:5}}>Informações Pessoais</h1>
+              
+              <label htmlFor="nome">Nome</label>
+              <input id="nome" type="text" placeholder="Digite seu nome" value={name} 
+              onChange={(e) => setName(e.target.value)} required/>
+
+              <label htmlFor="email">Email</label>
+              <input id="email" type="email" placeholder="Digite seu email" value={email} 
+              onChange={(e) => setEmail(e.target.value)} required/>
+
+              <label htmlFor="senha">Senha</label>
+              <input  id="senha" type="password" placeholder="Digite sua senha" value={password} 
+              onChange={(e) => setPassword(e.target.value)} minLength="8" required/>
+
+              <label htmlFor="rg">RG</label>
+              <input  id="rg" type="text" placeholder="Digite seu RG" value={rg}
+              onChange={(e) => setRg(e.target.value)} minLength="9" required/>
+
+              <label htmlFor="cpf">CPF</label>
+              <input  id="cpf" type="number" placeholder="Digite seu CPF" value={cpf}
+              onChange={(e) => setCpf(e.target.value)} minLength="11" required/>
+
+              <label htmlFor="whatsapp">WhatsApp</label>
+              <input id="whatsapp" type="number" placeholder="Digite seu whatsapp" value={whatsapp} 
+              onChange={(e) => setWhatsapp(e.target.value)} minLength="11" required/>
+              
+              <label htmlFor="graduacao">Graduação</label>
+              <input id="graduacao" type="text" placeholder="Digite sua graduação" value={graduacao}
+              onChange={(e) => setGraduacao(e.target.value)} required/>
+
+              <label htmlFor="Valor">Valor da Hora</label>
+              <input id="Valor" type="number" placeholder="R$ " value={valueTime}
+              onChange={(e) => setValueTime(e.target.value)} required/>
+
+              <label htmlFor="Valor">Nascimento</label>
+              <input id="date" type="date" value={birthDate}
+              onChange={(e) => setBirthDate(e.target.value)} required/>
+
+              <label htmlFor="sexo">Sexo</label>
+              <select id="sexo" style={{marginTop:10}} onChange={(e) => setSex(e.target.value)}>
+                <option value="">Selecione seu Sexo</option>
+                <option value={"M"}>Masculino</option>
+                <option value={"F"}>Feminino</option>
+              </select>
+              <button className="button" type="submit">Cadastrar-se</button>
+            </form>
+        }
+
     </div>
   </div>
   </>

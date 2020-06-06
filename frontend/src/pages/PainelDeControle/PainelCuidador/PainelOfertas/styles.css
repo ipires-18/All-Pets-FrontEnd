@@ -1,0 +1,18 @@
+.wrap {
+	flex-wrap: wrap;
+}
+
+.container {
+	max-width: 360px;
+	margin: 0 auto;
+  display: flex;
+  padding: 10px;
+}
+
+.item {
+	flex: 1;
+	margin: 5px;
+
+	text-align: center;
+	font-size: 1.5em;
+}

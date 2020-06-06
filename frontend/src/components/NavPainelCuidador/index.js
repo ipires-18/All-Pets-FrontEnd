@@ -6,6 +6,7 @@ import AllPets from '../Animations/LogoRoxa/index';
 import NavCuidador from '../NavCuidador/index';
 
 
+
 class NavbarPageCuidador extends Component {
 state = {
   isOpen: false
@@ -14,6 +15,8 @@ state = {
 toggleCollapse = () => {
   this.setState({ isOpen: !this.state.isOpen });
 }
+
+
 
 render() {
   return (
