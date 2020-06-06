@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import './styles.css';
 import Logo from '../../assets/logoroxo.svg';
-import {FiMenu,FiLogOut} from 'react-icons/fi';
+import {FiMenu, FiLogOut} from 'react-icons/fi';
 import swal from 'sweetalert';
 
-export default function NavCuidado(){ 
+export default function NavDono(){ 
 
   const name = localStorage.getItem('name');
   const email = localStorage.getItem('email');
@@ -47,8 +47,8 @@ export default function NavCuidado(){
         <section className="menu-container-link space-between">
           <div className="item-link">
             <ul>
-              <li><Link className="item-color ativo"  to="/cuidador">Propostas</Link></li>
-              <li><Link className="item-color"  to="/historico">Histórico</Link></li>
+              <li><Link className="item-color ativo"  to="/cuidador">Cuidadores</Link></li>
+              <li><Link className="item-color"  to="/historico">Contratos</Link></li>
               <li><Link className="item-color" to="/historico">Editar Perfil</Link></li>
             </ul>
           </div>

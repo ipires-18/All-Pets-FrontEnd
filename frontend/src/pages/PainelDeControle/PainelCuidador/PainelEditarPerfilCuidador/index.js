@@ -1,12 +1,10 @@
 import React from 'react';
-import NavPainelCuidador from '../../../../components/NavPainelCuidador';
-
+import NavBarCuidador from '../../../../components/NavCuidador';
 
 const PainelEditarPerfilCuidador = () => {
   return (
     <>
-      <NavPainelCuidador/>
-
+      <NavBarCuidador/>
       Perfil Cuidador
     </>
   )

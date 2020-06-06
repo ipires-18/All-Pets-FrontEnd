@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
 import logoImg from '../../assets/logo-roxo.svg';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import {FiArrowLeft} from 'react-icons/fi';
 import bannerImg from '../../assets/perfil.svg';
 import api from '../../services/api';
@@ -21,6 +21,7 @@ const FormularioRegistro = () => {
   const [valueTime, setValueTime] = useState('');
   const [typeUser, setTypeUser] = useState(0);
   const [twoFactor] = useState(false);
+  const history = useHistory();
   
   async function  handleRegister(e){
     e.preventDefault();
@@ -45,6 +46,7 @@ const FormularioRegistro = () => {
     try{
 
       swal("Cadastro", "Realizado com sucesso!", "success");
+      history.push('/login');
 
     }catch(error){
 

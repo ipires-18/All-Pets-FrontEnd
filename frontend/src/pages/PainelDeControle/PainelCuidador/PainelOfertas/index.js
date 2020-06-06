@@ -1,11 +1,11 @@
-import React,{useEffect, useState} from 'react';
-import NavPainelCuidador from '../../../../components/NavPainelCuidador';
+import React from 'react';
+import NavBarCuidador from '../../../../components/NavCuidador';
 
 const PainelOfertas = () => {
   return (
-    <>
-      <NavPainelCuidador/>
-      Tela Ofertas Cuidador    
+    <>  
+      <NavBarCuidador/>
+     <div style={{margin:30}}>Tela Ofertas Cuidador</div>     
     </>
   )
 }

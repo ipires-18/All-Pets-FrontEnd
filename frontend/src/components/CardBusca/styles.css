@@ -1,0 +1,26 @@
+.container-main{
+  background: #ffffff;
+  width: 100%;
+  height: 310px;
+}
+
+.container-input {
+  max-width: 100%;
+	
+	display: flex;
+	
+}
+
+.row {
+	flex-direction: row;
+}
+
+.item-input {
+	flex: 1;
+	margin: 5px;
+  justify-content: center;
+  align-items: center;
+	text-align: center;
+  font-size: 0.8em;
+  font-weight: 700;
+}

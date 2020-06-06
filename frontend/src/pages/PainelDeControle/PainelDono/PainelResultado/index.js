@@ -1,20 +1,15 @@
-import React,{useEffect} from 'react';
-import NavPainel from '../../../../components/NavPainel';
-import api from '../../../../services/api'
-
+import React from 'react';
+import NavDono from '../../../../components/NavDono';
+import CardBusca from '../../../../components/CardBusca';
+import CardResult from '../../../../components/CardResult';
 
 const PainelResultado = () => {
 
-  useEffect(() => {
-    api.get('donos').then(response => {
-        console.log(response.data);
-    })
-  },[])
-
   return (
     <>
-      <NavPainel/>
-      Tela de Propostas Donos
+      <NavDono/>
+      <CardBusca/>
+      <CardResult/>
     </>
   )
 }
