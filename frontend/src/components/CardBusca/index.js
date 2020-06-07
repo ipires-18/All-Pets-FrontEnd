@@ -27,17 +27,19 @@ export default function CardBusca(){
                   </div>
                 </section>
                 <section class="container-input row">
-                  <div class="item-input">
+                  {/* <div class="item-input">
                     <label htmlFor="nome" style={{display:'flex', justifyContent:'flex-start'}}>Nome do Pet</label>
                     <input id="nome" type="text" placeholder="Digite seu nome "/>
-                  </div>
+                  </div> */}
                   <div class="item-input">
                     <label htmlFor="des" style={{display:'flex', justifyContent:'flex-start'}}>Descrição</label>
                     <input id="des" type="text" placeholder="Digite sua descrição "/>
                   </div>
                   <div class="item-input">
-                    <button type="submit" className="button" style={{width:200, background:'#9C27B0', color:'#fff', margin:22}}>
-                      Entrar</button>
+                    <button type="submit" className="button" 
+                      style={{width:400, background:'#9C27B0', color:'#fff', margin:22}}>
+                      Buscar
+                    </button>
                   </div>
                 </section>
               </form>

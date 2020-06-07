@@ -1,0 +1,20 @@
+ .container-dono{
+  background: #FFF;
+  height: 50px;
+}
+
+.items-link{
+  padding: 8px;
+}
+
+ .items-link ul{
+  display: flex;
+  justify-content: space-around; 
+  list-style: none;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+ .link-dono li{
+  list-style: none;
+}

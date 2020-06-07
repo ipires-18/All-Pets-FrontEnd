@@ -1,0 +1,28 @@
+.container-cad{
+  background: #ffffff;
+  width: 1200px;
+  height: 450px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.container-input-cad {
+  max-width: 100%;
+	display: flex;
+	margin: 50px;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.item-input-cad {
+	flex: 1;
+	margin: 5px;
+  justify-content: center;
+  align-items: center;
+	text-align: center;
+  font-size: 0.8em;
+  font-weight: 700;
+}

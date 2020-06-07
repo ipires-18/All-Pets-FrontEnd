@@ -47,9 +47,9 @@ export default function NavDono(){
         <section className="menu-container-link space-between">
           <div className="item-link">
             <ul>
-              <li><Link className="item-color ativo"  to="/cuidador">Cuidadores</Link></li>
-              <li><Link className="item-color"  to="/historico">Contratos</Link></li>
-              <li><Link className="item-color" to="/historico">Editar Perfil</Link></li>
+              <li><Link className="item-color ativo"  to="/donos">Cuidadores</Link></li>
+              <li><Link className="item-color"  to="/contratos">Contratos</Link></li>
+              <li><Link className="item-color" to="/perfil/donos">Editar Perfil</Link></li>
             </ul>
           </div>
           <div className="item-link">
