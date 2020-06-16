@@ -12,17 +12,7 @@ import PainelDonoEditarEndereco from '../src/pages/PainelDeControle/PainelDono/P
 import PainelCuidador from '../src/pages/PainelDeControle/PainelCuidador/PainelOfertas';
 import PainelCuidadorCadastro from '../src/pages/PainelDeControle/PainelCuidador/PainelEditarPerfilCuidador/PainelCadastro';
 import PainelCuidadorEndereco from '../src/pages/PainelDeControle/PainelCuidador/PainelEditarPerfilCuidador/PainelEndereco';
-
-// const PrivateRoute = ({component: component, ...rest }) => (
-//     <Route {...rest} render={props => (
-//         isAuthenticated() ? (
-//             <Component {...props}/>
-//         ) : (
-//             <Redirect to={{pathname:'/', state:{from:props.location}}} />
-//         )
-//     )}/>
-// );
-
+import PainelOfertasResult from '../src/pages/PainelDeControle/PainelCuidador/PainelOfertas/PainelOfertaResult';
 
 export default function MainRoutes(){
     return(
@@ -39,6 +29,7 @@ export default function MainRoutes(){
                 <Route path="/cuidador" component={PainelCuidador}/>
                 <Route path="/perfil/cuidador" component={PainelCuidadorCadastro}/>
                 <Route exact path="/perfil/end/cuidador" component={PainelCuidadorEndereco}/>
+                <Route exact path="/result" component={PainelOfertasResult}/>
             </Switch>
         </BrowserRouter>
     );

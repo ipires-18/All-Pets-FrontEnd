@@ -1,7 +1,7 @@
 import React from 'react';
 import NavDono from '../../../../components/NavDono';
 import CardBusca from '../../../../components/CardBusca';
-import CardResult from '../../../../components/CardResult';
+
 
 const PainelResultado = () => {
 
@@ -9,7 +9,7 @@ const PainelResultado = () => {
     <>
       <NavDono/>
       <CardBusca/>
-      <CardResult/>
+      
     </>
   )
 }

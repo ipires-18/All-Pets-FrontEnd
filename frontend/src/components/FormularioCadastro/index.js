@@ -2,6 +2,13 @@ import React from 'react';
 import './styles.css';
 
 export default function FormularioCadastro(){
+
+  const name =  localStorage.getItem('name');
+  const email = localStorage.getItem('email');
+  const cpf = localStorage.getItem('cpf');
+  const whatsapp =  localStorage.getItem('whatsapp');
+  const rg = localStorage.getItem('rg');
+
   return(
     <>    
       <div className="container-cad">
@@ -10,11 +17,11 @@ export default function FormularioCadastro(){
                 <section class="container-input-cad row">
                   <div class="item-input">
                     <label htmlFor="nome" style={{display:'flex', justifyContent:'flex-start'}}>Nome Completo</label>
-                    <input id="nome" type="text" placeholder="Digite seu nome completo"/>
+                    <input defaultValue={name} id="nome" type="text" placeholder="Digite seu nome completo"/>
                   </div>
                   <div class="item-input">
                     <label htmlFor="email" style={{display:'flex', justifyContent:'flex-start'}}>Email</label>
-                    <input id="email" type="text" placeholder="Digite seu email"/>
+                    <input defaultValue={email} id="email" type="text" placeholder="Digite seu email"/>
                   </div>
                   <div class="item-input">
                     <label htmlFor="senha" style={{display:'flex', justifyContent:'flex-start'}}>Senha</label>
@@ -22,21 +29,21 @@ export default function FormularioCadastro(){
                   </div>
                   <div class="item-input">
                   <label htmlFor="senhav" style={{display:'flex', justifyContent:'flex-start'}}>Nova Senha</label>
-                    <input id="senhav" type="number" placeholder="Digite sua Nova Senha "/>
+                    <input  id="senhav" type="number" placeholder="Digite sua Nova Senha "/>
                   </div>
                 </section>
                 <section class="container-input-cad row">
                   <div class="item-input">
                     <label htmlFor="rg" style={{display:'flex', justifyContent:'flex-start'}}>RG</label>
-                    <input id="rg" type="text" placeholder="Digite seu RG "/>
+                    <input defaultValue={rg} id="rg" type="text" placeholder="Digite seu RG "/>
                   </div>
                   <div class="item-input">
                     <label htmlFor="cpf" style={{display:'flex', justifyContent:'flex-start'}}>CPF</label>
-                    <input id="cpf" type="text" placeholder="Digite sua descrição "/>
+                    <input defaultValue={cpf} id="cpf" type="text" placeholder="Digite sua descrição "/>
                   </div>
                   <div class="item-input">
                     <label htmlFor="whatsApp" style={{display:'flex', justifyContent:'flex-start'}}>WhatsApp</label>
-                    <input id="whatsApp" type="text" placeholder="Digite sua descrição "/>
+                    <input defaultChecked={whatsapp} id="whatsApp" type="text" placeholder="Digite sua WhatsApp "/>
                   </div>
                   <div class="item-input">
                     <button type="submit" className="button" 

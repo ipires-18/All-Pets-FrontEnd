@@ -12,8 +12,10 @@ import {useFormLogin } from '../../context/FormLogin';
 
 const FormularioLogin = () => {
 
+ 
   const [typeUser, setTypeUser] = useState(0);
   const {email, setEmail, password ,setPassword} = useFormLogin();
+  
 
   const history = useHistory();
  
@@ -25,15 +27,12 @@ const FormularioLogin = () => {
         
       const response = await api.post('login/logar', {typeUser, email, password})
 
-      //const {idUser,name,email,cpf,birthDate,whatsapp,rg,graduacao,valueTime,typeUser} = response.data;
-      
-      // const data = response.data;
-        
-      // console.log(data)
-      // localStorage.setItem('data', data);
       localStorage.setItem('idUser', response.data.idUser);
+      localStorage.setItem('twoFactor', response.data.twoFactor);
+      localStorage.setItem('twoFactorCode', response.data.twoFactorCode);
       localStorage.setItem('name', response.data.name);
       localStorage.setItem('email', response.data.email);
+      localStorage.setItem('password', response.data.password);
       localStorage.setItem('cpf', response.data.cpf);
       localStorage.setItem('birthDate', response.data.birthDate);
       localStorage.setItem('whatsapp', response.data.whatsapp);
@@ -41,13 +40,16 @@ const FormularioLogin = () => {
       localStorage.setItem('graduacao', response.data.graduacao);
       localStorage.setItem('valueTime', response.data.valueTime);
       localStorage.setItem('typeUser', response.data.typeUser);
-
+      const idAddress =  localStorage.getItem('idAddress');
+  
         if(typeUser == 1){
 
           history.push('/donos');
+          
 
         }else if(typeUser == 2){
 
+          
           history.push('/cuidador');
 
         }else{
@@ -73,8 +75,9 @@ return (
           <h1>Entre na sua conta</h1>
 
         <label htmlFor="email">Perfil</label>
-        <select onChange={(e) => setTypeUser(e.target.value)}>
-          <option value={0}>Escolha seu Perfil</option>
+        <select onChange={(e) =>       
+        setTypeUser(e.target.value) }>
+          <option value="">Escolha seu Perfil</option>
           <option value={1}>Dono de Animais</option>
           <option value={2}>Cuidador de Animais</option>
         </select>

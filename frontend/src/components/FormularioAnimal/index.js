@@ -9,9 +9,9 @@ export default function FormularioCadastro(){
   const [age] = useState(null)
   const [rga] = useState(null)
   const [breed, setBreed] = useState('')
-  const [medication] = useState('')
+  const [medication] = useState(false)
   const [size, setSize] = useState('');
-  const [weight, setWeight] = useState(null);
+  const [weight] = useState(null);
   const idUser =  localStorage.getItem('idUser');
   const history = useHistory();
 
@@ -32,6 +32,8 @@ export default function FormularioCadastro(){
     try{
       
     const res = await api.post('pets', data)
+
+    console.log(res)
 
     if(res.status == 201){
       swal("Cadastro", "Animal Cadastrado", "success");
@@ -61,21 +63,13 @@ export default function FormularioCadastro(){
                   </div>
                 </section>
                   <section class="container-input-cad row">
-                    {/* <div class="item-input">
-                      <label htmlFor="sexo">Sexo</label>
-                        <select id="sexo" style={{marginTop:10}} onChange={(e) => setSex(e.target.value)}>
-                        <option value="">Selecione seu Sexo</option>
-                        <option value={"M"}>Masculino</option>
-                        <option value={"F"}>Feminino</option>
-                      </select>
-                    </div> */}
                   <div class="item-input">
                       <label htmlFor="porte">Porte</label>
                       <select id="porte" style={{marginTop:10}} onChange={(e) => setSize(e.target.value)}>
                       <option value="">Selecione o porte</option>
                       <option value={"P"}>Pequeno</option>
                       <option value={"M"}>Medio</option>
-                      <option value={"G"}>Medio</option>
+                      <option value={"G"}>Grande</option>
                     </select>
                   </div>
                   <div class="item-input">

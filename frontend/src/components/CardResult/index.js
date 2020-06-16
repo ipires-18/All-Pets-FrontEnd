@@ -4,37 +4,41 @@ import api from '../../services/api'
 
 export default function CardResult(){
 
-  const [usuarios, setUsuarios] = useState([]);
+  //const [usuarios, setUsuarios] = useState([]);
 
-  useEffect(() => {
-    api.get('donos').then(response => {
-      setUsuarios(response.data);
-    })
-  },[])
+
+  //console.log(currentRegion)
+  
+  // useEffect(() => {
+  //   api.get('cuidadores/search').then(response => {
+  //     setUsuarios(response.data);
+  //   })
+  // },[])
+
 
   return(
     <>
-      <section className="result-container">
+      {/* <section className="result-container">
           <ul>
-          {usuarios.map(usuarios =>(
-             <li key={usuarios.idUser}>
+          {currentRegion.map(currentRegion =>(
+             <li key={currentRegion.idUser}>
               <div className="items-result">
                 <strong>Nome:</strong>
-                <p>{usuarios.name}</p>
+                <p>{currentRegion.name}</p>
                 <strong>Graduação:</strong>
-                <p>{usuarios.graduacao}</p>
+                <p>{currentRegion.graduacao}</p>
               </div>
               <div className="items-result">
                 <strong>Nascimento:</strong>
-                <p>{usuarios.birthDate}</p>
+                <p>{currentRegion.birthDate}</p>
                 <strong>Valor da hora:</strong>
-                <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'}).format(usuarios.valueTime)}</p>
+                <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'}).format(currentRegion.valueTime)}</p>
               </div>
              <button style={{width:80, borderRadius:8, background:'#9C27B0', color:'#fff'}}>Contratar</button>
             </li>
           ))}
           </ul>
-      </section>
+      </section> */}
     </>
   )
 }
