@@ -7,7 +7,7 @@ const PainelOfertasResult = () => {
   const [pet, setPet] = useState([]);
   
   useEffect(() => {api.get('pets').then(response => {setPet(response.data);})},[]);
-
+  
  
   return (
     <>  

@@ -47,8 +47,8 @@ export default function NavCuidado(){
         <section className="menu-container-link space-between">
           <div className="item-link">
             <ul>
-              <li><Link className="item-color ativo"  to="/cuidador">Propostas</Link></li>
-              <li><Link className="item-color"  to="/historico">Histórico</Link></li>
+              <li><Link className="item-color"  to="/cuidador">Propostas</Link></li>
+              <li><Link className="item-color"  to="/perfil/historico">Histórico</Link></li>
               <li><Link className="item-color" to="/perfil/cuidador">Editar Perfil</Link></li>
             </ul>
           </div>

@@ -33,9 +33,11 @@ export default function MyVerticallyCenteredModal(props) {
           "description":descricao   
         }
         
-        console.log(data)
+      
+      const response = await api.post('service', data);
+        
+      localStorage.setItem('idServices', response.data.idService);
 
-      const response = await api.post('service', data)
 
       swal("Serviço", "Sucesso em efetuar o serviço", "success");
 

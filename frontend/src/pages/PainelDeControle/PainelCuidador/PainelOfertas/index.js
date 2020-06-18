@@ -1,49 +1,40 @@
 import React,{useState, useEffect} from 'react';
 import NavBarCuidador from '../../../../components/NavCuidador';
 import api from '../../../../services/api';
-import {useHistory} from 'react-router-dom';
+import MyVerticallyCenteredModalService from '../../../../components/ModalServices';
 
 const PainelOfertas = () => {
 
+  const  idOwner =  localStorage.getItem('idUser');
   const [services, setServices] = useState([]);
-  const [idService, setIdService] = useState([]);
+  const [idService, setIdService] = useState(['']);
   const [status, setStatus] = useState(0);
-  const [ord] = useState(true);
-  const  idUserDono = localStorage.getItem('idUser')
-  const  idUserCuidador =  localStorage.getItem('idUserCuidador');
-  const history = useHistory();
+  const [modalShow, setModalShow] = useState(false);
+  
+  function handleServices(){
+
+    api.get('service', {
+      params:{
+        status,
+        idOwner
+      }
+    }).then(response => setServices(response.data));
+
+  }
+
 
   useEffect(() => {
-      
-    api.get('service', {params: status, idUserCuidador, idUserDono, ord}).then(response => {
-      setServices(response.data);
 
-    })
-  },[]);
-
-  
- async function test(idx) {
+    handleServices();
     
-    // await setIdService(services[idx].idService); 
-    // await setStatus(status + 1); 
+  }, [idOwner])
 
-    // const res = await api.put('service', {idService, status});
+   function testeId(idx) { setIdService(services[idx].idService); setStatus(1); setModalShow(true);}
 
-    // console.log(res)
-
-    if(status == 0 ){
-      alert("Oferta aceita")
-      history.push("/result")
-    }
-    
-    
-  }
+  localStorage.setItem("idService", idService);
+  localStorage.setItem("status", status);
   
- 
-
   
-
-
   return (
     <>  
       <NavBarCuidador/>
@@ -73,21 +64,19 @@ const PainelOfertas = () => {
                     <strong style={{fontSize:20}}>Total do serviço:</strong>
                     <p style={{fontSize:20}}>{Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'}).format(services.fkOwner.valueTime * services.qtdTime)}</p>
                   </div>
-                  
-                  <button onClick={()=> {test(index)}} className="button"  type="button" style={{display:'flex', color:'#FFF',
+
+                  <button  onClick={()=> {testeId(index)}}   className="button"  type="button" style={{display:'flex', color:'#FFF',
                     background:'#9C27B0',flexDirection:'column', justifyContent:'center', 
                     alignItems:'center'}}>
-                      Aceitar
+                      Aceitar Proposta
                   </button>
-                  <button className="button"  type="button" style={{display:'flex', color:'#FFF',
-                    background:'#5C5C5C',flexDirection:'column', justifyContent:'center', 
-                    alignItems:'center'}}>
-                      Rejeitar
-                  </button>
+                
                   <hr/>
                 </li>
                   ))}
             </ul>   
+            <MyVerticallyCenteredModalService   show={modalShow}
+                  onHide={() => setModalShow(false)} />
           </section>
        </form>
      </div>     
