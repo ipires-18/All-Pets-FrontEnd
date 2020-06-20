@@ -17,7 +17,7 @@ export default function FormularioCadastro(){
 
   async function handleFormPet(e){
     e.preventDefault();
-
+  
     const data = {
       name,
       age,
@@ -28,13 +28,13 @@ export default function FormularioCadastro(){
       size,
       idUser
   }
-
+  
     try{
       
     const res = await api.post('pets', data)
-
+  
     console.log(res)
-
+  
     if(res.status == 201){
       swal("Cadastro", "Animal Cadastrado", "success");
     }
@@ -43,7 +43,9 @@ export default function FormularioCadastro(){
         swal("Cadastro", "Falha no Cadastro", "error");
        
     }
-}
+  }
+
+
 
   return(
     <>    

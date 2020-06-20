@@ -9,7 +9,6 @@ export default function MyVerticallyCenteredModalService(props) {
   const idService = localStorage.getItem('idService');
   const [status, Setstatus] = useState(1)
 
-
   const history = useHistory();
 
     
@@ -31,6 +30,7 @@ export default function MyVerticallyCenteredModalService(props) {
   history.push('/cuidador')
     
  }
+
 
   return (
     <Modal

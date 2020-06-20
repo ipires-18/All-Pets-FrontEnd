@@ -8,6 +8,15 @@ export default function MyVerticallyCenteredModal(props) {
   const [quantidade, setQuantidade] = useState('');
   const [descricao, setDescricao] = useState('');
 
+  const idUser =  localStorage.getItem('idUser');
+  const [name, setName] = useState('')
+  const [age, setAge] = useState('')
+  const [breed, setBreed] = useState('')
+  const [typePet, setTypePet] = useState('')
+  const [size, setSize] = useState('');
+  const [observacao, setObservacao] = useState('');
+ 
+
 
   const  idUserDono = localStorage.getItem('idUser')
   const  idUserCuidador =  localStorage.getItem('idUserCuidador');
@@ -16,6 +25,45 @@ export default function MyVerticallyCenteredModal(props) {
   console.log("Descrição: "+descricao)
   console.log("IdUserDone: "+idUserDono)
   console.log("IdUserCuidador: "+idUserCuidador)
+
+
+  // async function handleFormPetAndService(e){
+
+  //   e.preventDefault();
+
+  //   await handleFormPet();
+
+  //   await handleService();
+
+  // }
+
+  async function handleFormPet(e){
+    e.preventDefault();
+
+    const data = {
+      name,
+      age,
+      breed,
+      typePet,
+      size,
+      observacao,
+      idUser
+  }
+
+    try{
+      
+    const res = await api.post('pets', data)
+
+    if(res.status == 201){
+      swal("Cadastro", "Animal Cadastrado", "success");
+      
+    }
+         
+    }catch(err){
+        swal("Cadastro", "Falha no Cadastro", "error");
+       
+    }
+}
   
   
   async function handleService(e){
@@ -59,25 +107,28 @@ export default function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <form onSubmit={handleService}>
-          <div class="item-input">
+      <form onSubmit={handleService}>
+         <div class="item-input">
             <label htmlFor="valor" style={{display:'flex', justifyContent:'flex-start'}}>Quantidade de Horas</label>
             <input value={quantidade} onChange={(e) => setQuantidade(e.target.value)} 
               id="valor" type="number" style={{width:'100%', padding:'8px', height:'50px', borderRadius:'6px'}} 
               placeholder="R$ "/>
           </div>
+
           <div class="item-input">
             <label htmlFor="cidade" style={{display:'flex', justifyContent:'flex-start'}}>Descrição</label>
             <input value={descricao} onChange={(e) => setDescricao(e.target.value)} 
             id="cidade" type="text" style={{width:'100%', padding:'8px', height:'50px', borderRadius:'6px'}}
             placeholder="Digite sua descrição"/>
           </div>
+
           <button onClick={props.onHide} type="submit" className="button" 
             style={{width:400, background:'#9C27B0', color:'#fff', margin:22, display:'flex', justifyContent:'center', 
             margin:'0 auto'}}>
               Contratar
           </button>
-        </form>
+      </form>
+
       </Modal.Body>
     </Modal>
   );

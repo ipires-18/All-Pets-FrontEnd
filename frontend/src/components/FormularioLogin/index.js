@@ -8,14 +8,12 @@ import api from '../../services/api';
 import swal from 'sweetalert';
 import {useFormLogin } from '../../context/FormLogin';
 
-
-
 const FormularioLogin = () => {
 
  
   const [typeUser, setTypeUser] = useState(0);
   const {email, setEmail, password ,setPassword} = useFormLogin();
-  
+  const [modalShow, setModalShow] = useState(false);
 
   const history = useHistory();
  
@@ -40,22 +38,62 @@ const FormularioLogin = () => {
       localStorage.setItem('graduacao', response.data.graduacao);
       localStorage.setItem('valueTime', response.data.valueTime);
       localStorage.setItem('typeUser', response.data.typeUser);
+      localStorage.setItem('address', response.data.address);
+      
       const idAddress =  localStorage.getItem('idAddress');
+      const twoFactor =  localStorage.getItem('twoFactor');
+
+      console.log(response)
+
+      console.log(response.data.address == null)
+
+      const twoFactorCode =  localStorage.getItem('twoFactorCode');
   
-        if(typeUser == 1){
+    
+        if(typeUser == 1 && response.data.twoFactor == true){
 
-          history.push('/donos');
-          
-
-        }else if(typeUser == 2){
-
-          
-          history.push('/cuidador');
-
-        }else{
-
-            swal("Login", "Verifique seus dados", "error");
+          swal("Digite o código sms:", {
+            content: "input",
+          })
+          .then((value) => {
+            swal(`You typed: ${value}`);
+            if(`${value}` == twoFactorCode){
+              history.push('/donos')
+            }else{
+              history.push('/login')
+              swal("Erro no codigo", "Falha no codigo", "error");
+            }
+          });
+        }else if(typeUser == 2 && response.data.twoFactor == true){
             
+          swal("Digite o código sms:", {
+            content: "input",
+          })
+          .then((value) => {
+            swal(`You typed: ${value}`);
+            if(`${value}` == twoFactorCode){
+              history.push('/cuidador')
+            }else{
+              history.push('/login')
+              swal("Erro no codigo", "Falha no codigo", "error");
+            }
+          });
+          
+        }else if(typeUser == 1 && response.data.twoFactor == false){
+            
+          if(response.data.address == null){
+            history.push('/perfil/endereco');
+          }
+
+            history.push('/donos');   
+
+        }else if(typeUser == 2 && response.data.twoFactor == false){
+
+          if(response.data.address == null){
+            history.push('/perfil/end/cuidador');
+          }
+            
+          history.push('/cuidador') 
         }
 
       }catch(err){
@@ -91,7 +129,7 @@ return (
           onChange={(e) => setPassword(e.target.value)}/>
 
           <button type="submit" className="button">Entrar</button>
-        
+  
           <Link className="ancora" to="/registro">
             <FiLogIn size={16} color="#FFF"/>
             Não tenho cadastro
@@ -105,7 +143,7 @@ return (
         <section className="ordernacao">
             <img src={heroesImg} className="banner" alt="All Pets" />
         </section>
-        
+      
       </div> 
   </>
 )};

@@ -4,6 +4,7 @@ import {useHistory} from 'react-router-dom';
 import swal from 'sweetalert';
 import './styles.css';
 import MyVerticallyCenteredModal from '../Modal';
+import MyVerticallyCenteredModalAnimal from '../ModalAnimal';
 
 export default function CardBusca(){
 
@@ -14,9 +15,12 @@ export default function CardBusca(){
   const [value, setValue] = useState(['']);
   const [currentRegion, setCurrentRegion] = useState([]);
   const [modalShow, setModalShow] = useState(false);
+  const [modalAniShow, setModalAniShow] = useState(false);
   const history = useHistory();
 
   function teste(idx) {setIdUserCuidador(currentRegion[idx].idUser); setModalShow(true); }
+
+  function testeAni(idx) {setIdUserCuidador(currentRegion[idx].idUser); setModalAniShow(true); }
 
   localStorage.setItem('idUserCuidador',idUserCuidador)
 
@@ -128,8 +132,14 @@ export default function CardBusca(){
                     <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'}).format(current.valueTime)}</p>
                  
                   </div>
-                  <button onClick={()=> {teste(index)}} 
+                 
+                  <button onClick={()=> {testeAni(index)}}  
                   style={{width:80, borderRadius:8, background:'#9C27B0', color:'#fff'}}>
+                    Cadastro de pet 
+                  </button>
+
+                  <button onClick={()=> {teste(index)}} 
+                  style={{width:80, borderRadius:8, background:'#9C27B0', color:'#fff', margin:'70px 2px'}}>
                     Contratar
                   </button>
                 </li>
@@ -139,6 +149,9 @@ export default function CardBusca(){
 
             <MyVerticallyCenteredModal   show={modalShow}
               onHide={() => setModalShow(false)} />
+
+            <MyVerticallyCenteredModalAnimal   show={modalAniShow}
+              onHide={() => setModalAniShow(false)} />  
               
           </section>
         </main>

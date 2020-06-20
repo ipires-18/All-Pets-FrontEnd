@@ -4,7 +4,6 @@ import CardBusca from '../../../../components/CardBusca';
 
 
 const PainelResultado = () => {
-
   return (
     <>
       <NavDono/>

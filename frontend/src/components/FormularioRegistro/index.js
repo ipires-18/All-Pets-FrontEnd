@@ -20,7 +20,7 @@ const FormularioRegistro = () => {
   const [sex, setSex] = useState('');
   const [valueTime, setValueTime] = useState('');
   const [typeUser, setTypeUser] = useState(0);
-  const [twoFactor] = useState(false);
+  const [twoFactor, setTwoFactor] = useState();
   const history = useHistory();
   
   async function  handleRegister(e){
@@ -44,10 +44,13 @@ const FormularioRegistro = () => {
    const resposta = await api.post('donos', data);
 
     try{
+ 
+      if(resposta.status == 201){
 
-      swal("Cadastro", "Realizado com sucesso!", "success");
-      history.push('/login');
-
+        history.push('/login');
+        swal("Cadastro", "Realizado com sucesso!", "success");
+      }
+      
     }catch(error){
 
       swal("Cadastro", "Error no cadastro tente novamente", "error");
@@ -123,12 +126,12 @@ return (
             <input id="date" type="date" value={birthDate}
              onChange={(e) => setBirthDate(e.target.value)} required/>
 
-            <label htmlFor="sexo">Sexo</label>
-            <select id="sexo" style={{marginTop:10}} onChange={(e) => setSex(e.target.value)}>
-              <option value="">Selecione seu Sexo</option>
-              <option value={"M"}>Masculino</option>
-              <option value={"F"}>Feminino</option>
-            </select>
+              <label htmlFor="twoFactor">Deseja ter autenticação de dois Fatores:</label>
+              <select id="twoFactor" style={{marginTop:10}} onChange={(e) => setTwoFactor(e.target.value)} required>
+                <option value="">Selecione</option>
+                <option value={true}>Sim</option>
+                <option value={false}>Não</option>
+              </select>
             <button className="button" type="submit">Cadastrar-se</button>
           </form>
         }
@@ -173,11 +176,11 @@ return (
               <input id="date" type="date" value={birthDate}
               onChange={(e) => setBirthDate(e.target.value)} required/>
 
-              <label htmlFor="sexo">Sexo</label>
-              <select id="sexo" style={{marginTop:10}} onChange={(e) => setSex(e.target.value)}>
-                <option value="">Selecione seu Sexo</option>
-                <option value={"M"}>Masculino</option>
-                <option value={"F"}>Feminino</option>
+              <label htmlFor="twoFactor">Deseja ter autenticação de dois Fatores:</label>
+              <select id="twoFactor" style={{marginTop:10}} onChange={(e) => setTwoFactor(e.target.value)} required>
+                <option value="">Selecione</option>
+                <option value={true}>Sim</option>
+                <option value={false}>Não</option>
               </select>
               <button className="button" type="submit">Cadastrar-se</button>
             </form>
