@@ -126,7 +126,7 @@ return (
             <input id="date" type="date" value={birthDate}
              onChange={(e) => setBirthDate(e.target.value)} required/>
 
-              <label htmlFor="twoFactor">Deseja ter autenticação de dois Fatores:</label>
+              <label htmlFor="twoFactor">Deseja ter autenticação via SMS:</label>
               <select id="twoFactor" style={{marginTop:10}} onChange={(e) => setTwoFactor(e.target.value)} required>
                 <option value="">Selecione</option>
                 <option value={true}>Sim</option>
@@ -176,7 +176,7 @@ return (
               <input id="date" type="date" value={birthDate}
               onChange={(e) => setBirthDate(e.target.value)} required/>
 
-              <label htmlFor="twoFactor">Deseja ter autenticação de dois Fatores:</label>
+              <label htmlFor="twoFactor">Deseja ter autenticação de via SMS:</label>
               <select id="twoFactor" style={{marginTop:10}} onChange={(e) => setTwoFactor(e.target.value)} required>
                 <option value="">Selecione</option>
                 <option value={true}>Sim</option>

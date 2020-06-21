@@ -23,6 +23,8 @@ const PainelContrato = () => {
     
   }, [])
 
+  console.log(historico)
+
 
   return (
     <>

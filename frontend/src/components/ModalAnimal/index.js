@@ -33,7 +33,8 @@ export default function MyVerticallyCenteredModalAnimal(props) {
 
     if(res.status == 201){
       swal("Cadastro", "Animal Cadastrado", "success");
-      
+      console.log(res.data)
+      localStorage.setItem("idPet", res.data.idPet);
     }
          
     }catch(err){

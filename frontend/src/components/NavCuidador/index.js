@@ -50,6 +50,7 @@ export default function NavCuidado(){
               <li><Link className="item-color"  to="/cuidador">Propostas</Link></li>
               <li><Link className="item-color"  to="/perfil/historico">Histórico</Link></li>
               <li><Link className="item-color" to="/perfil/cuidador">Editar Perfil</Link></li>
+              {/* <li><Link className="item-color"  to="/result">Locais de Serviços</Link></li> */}
             </ul>
           </div>
           <div className="item-link">

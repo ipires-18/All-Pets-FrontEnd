@@ -4,68 +4,12 @@ import api from '../../services/api';
 import swal from 'sweetalert';
 
 export default function MyVerticallyCenteredModal(props) {
-  
+
   const [quantidade, setQuantidade] = useState('');
   const [descricao, setDescricao] = useState('');
-
-  const idUser =  localStorage.getItem('idUser');
-  const [name, setName] = useState('')
-  const [age, setAge] = useState('')
-  const [breed, setBreed] = useState('')
-  const [typePet, setTypePet] = useState('')
-  const [size, setSize] = useState('');
-  const [observacao, setObservacao] = useState('');
- 
-
-
   const  idUserDono = localStorage.getItem('idUser')
   const  idUserCuidador =  localStorage.getItem('idUserCuidador');
 
-  console.log("Quantidade: "+quantidade)
-  console.log("Descrição: "+descricao)
-  console.log("IdUserDone: "+idUserDono)
-  console.log("IdUserCuidador: "+idUserCuidador)
-
-
-  // async function handleFormPetAndService(e){
-
-  //   e.preventDefault();
-
-  //   await handleFormPet();
-
-  //   await handleService();
-
-  // }
-
-  async function handleFormPet(e){
-    e.preventDefault();
-
-    const data = {
-      name,
-      age,
-      breed,
-      typePet,
-      size,
-      observacao,
-      idUser
-  }
-
-    try{
-      
-    const res = await api.post('pets', data)
-
-    if(res.status == 201){
-      swal("Cadastro", "Animal Cadastrado", "success");
-      
-    }
-         
-    }catch(err){
-        swal("Cadastro", "Falha no Cadastro", "error");
-       
-    }
-}
-  
-  
   async function handleService(e){
       e.preventDefault();
       try{
@@ -82,7 +26,45 @@ export default function MyVerticallyCenteredModal(props) {
         }
         
       
+      
       const response = await api.post('service', data);
+
+      // if(response.status == 201){
+
+      //   const idUser =  localStorage.getItem('idUser');
+      //   const twoFactor = localStorage.getItem('twoFactor');
+      //   const twoFactorCode = localStorage.getItem('twoFactorCode');
+      //   const name = localStorage.getItem('name');
+      //   const email = localStorage.getItem('email');
+      //   const password = localStorage.getItem('password');
+      //   const cpf = localStorage.getItem('cpf');
+      //   const birthDate = localStorage.getItem('birthDate');
+      //   const whatsapp = localStorage.getItem('whatsapp');
+      //   const rg = localStorage.getItem('rg');
+      //   const graduacao = localStorage.getItem('graduacao');
+      //   const valueTime = localStorage.getItem('valueTime');
+      //   const typeUser = localStorage.getItem('typeUser');
+      //   const idAddress = localStorage.getItem('idAddress');
+      //   const idPet = localStorage.getItem('idPet');
+       
+      //   const res = await api.put(`donos/${idUser}`, {
+      //     twoFactor,
+      //     twoFactorCode,
+      //     name,
+      //     email,
+      //     password,
+      //     cpf,
+      //     birthDate,
+      //     whatsapp,
+      //     rg,
+      //     graduacao,
+      //     valueTime,
+      //     typeUser,
+      //     idAddress,
+      //     idPet
+      //   });
+
+      // }
         
       localStorage.setItem('idServices', response.data.idService);
 
@@ -112,7 +94,7 @@ export default function MyVerticallyCenteredModal(props) {
             <label htmlFor="valor" style={{display:'flex', justifyContent:'flex-start'}}>Quantidade de Horas</label>
             <input value={quantidade} onChange={(e) => setQuantidade(e.target.value)} 
               id="valor" type="number" style={{width:'100%', padding:'8px', height:'50px', borderRadius:'6px'}} 
-              placeholder="R$ "/>
+              placeholder="Digite a quantidade de horas"/>
           </div>
 
           <div class="item-input">

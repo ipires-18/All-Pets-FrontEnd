@@ -7,30 +7,39 @@ import {useHistory} from 'react-router-dom';
 export default function MyVerticallyCenteredModalService(props) {
   
   const idService = localStorage.getItem('idService');
-  const [status, Setstatus] = useState(1)
+  const [status, setStatus] = useState(1)
 
   const history = useHistory();
 
     
  async function handleAccept(e) {
   e.preventDefault();
+  setStatus(1)
+    console.log("Aceitar: "+status);
 
-  const status = localStorage.getItem('status');
-        
   const res = await api.put(`service/${idService}/${status}`);
 
+  swal("Proposta", "Aceita com sucesso", "success");
 
-  if(res.status == 204 && status == 1){
-    swal("Proposta", "Aceita com sucesso", "success");
-    history.push('/result')
-  } 
-  
-  Setstatus(2)
-  swal("Proposta", "Rejeitada com sucesso", "success");
-  history.push('/cuidador')
-    
+  history.push('/perfil/historico');
+      
  }
 
+
+ async function handleReject(e) {
+    e.preventDefault();
+    setStatus(2)
+
+    const res = await api.put(`service/${idService}/${status}`);
+     
+    swal("Proposta", "Rejeitada com sucesso", "success");
+
+    history.push('/cuidador');
+
+    
+    console.log("Rejeitar: "+status);
+        
+ }
 
   return (
     <Modal
@@ -48,19 +57,21 @@ export default function MyVerticallyCenteredModalService(props) {
       </Modal.Header>
       <Modal.Body>
         <form onSubmit={handleAccept}>
-          <div style={{display:'flex'}}>
             <button onClick={props.onHide, handleAccept} type="submit" className="button" 
-              style={{width:400, background:'#9C27B0', color:'#fff', margin:22, display:'flex', justifyContent:'center', 
-              margin:'0 10px'}}>
+              style={{width:400, background:'#9C27B0', color:'#fff',  display:'flex', justifyContent:'center', 
+              margin:'10px auto'}}>
                 Aceitar
             </button>
-            <button onClick={props.onHide} type="submit" className="button" 
-              style={{width:400, background:'#B787E8', color:'#fff', margin:22, display:'flex', justifyContent:'center', 
-              margin:'0 auto'}}>
-                Rejeitar
-            </button>
-          </div>
         </form>
+
+        <form action="" onSubmit={handleReject}>
+          <button onClick={props.onHide, handleReject} type="submit" className="button" 
+            style={{width:400, background:'#B787E8', color:'#fff',  display:'flex', justifyContent:'center', 
+            margin:'0 auto'}}>
+            Rejeitar
+          </button>
+        </form>
+
       </Modal.Body>
     </Modal>
   );

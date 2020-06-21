@@ -8,6 +8,7 @@ import api from '../../services/api';
 import swal from 'sweetalert';
 import {useFormLogin } from '../../context/FormLogin';
 
+
 const FormularioLogin = () => {
 
  
@@ -39,11 +40,13 @@ const FormularioLogin = () => {
       localStorage.setItem('valueTime', response.data.valueTime);
       localStorage.setItem('typeUser', response.data.typeUser);
       localStorage.setItem('address', response.data.address);
+      localStorage.setItem('animal', response.data.animal);
       
-      const idAddress =  localStorage.getItem('idAddress');
-      const twoFactor =  localStorage.getItem('twoFactor');
+      const address =  localStorage.getItem('address');
+      const animal =  localStorage.getItem('animal');
 
-      console.log(response)
+      console.log("address" +address)
+      console.log("animal" +animal)
 
       console.log(response.data.address == null)
 
@@ -56,7 +59,7 @@ const FormularioLogin = () => {
             content: "input",
           })
           .then((value) => {
-            swal(`You typed: ${value}`);
+            swal(`CÓDIGO VÁLIDO: ${value}`);
             if(`${value}` == twoFactorCode){
               history.push('/donos')
             }else{
@@ -70,7 +73,7 @@ const FormularioLogin = () => {
             content: "input",
           })
           .then((value) => {
-            swal(`You typed: ${value}`);
+            swal(`CÓDIGO VÁLIDO: ${value}`);
             if(`${value}` == twoFactorCode){
               history.push('/cuidador')
             }else{

@@ -29,6 +29,9 @@ const PainelOfertas = () => {
     
   }, [idOwner])
 
+
+  console.log(services)
+
    function testeId(idx) { setIdService(services[idx].idService); setStatus(1); setModalShow(true);}
 
   localStorage.setItem("idService", idService);
@@ -68,7 +71,7 @@ const PainelOfertas = () => {
                   <button  onClick={()=> {testeId(index)}}   className="button"  type="button" style={{display:'flex', color:'#FFF',
                     background:'#9C27B0',flexDirection:'column', justifyContent:'center', 
                     alignItems:'center'}}>
-                      Aceitar Proposta
+                      Ver mais
                   </button>
                 
                   <hr/>

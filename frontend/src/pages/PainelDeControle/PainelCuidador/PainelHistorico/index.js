@@ -7,8 +7,13 @@ const PainelHistorico = () => {
 
   const  idOwner =  localStorage.getItem('idUser');
   const [historico, setHistorico] = useState([]);
-  const [ord, setOrd] = useState(true);
+  const [ord] = useState(true);
   const status = localStorage.getItem('status')
+
+
+  console.log(idOwner);
+  console.log(status);
+  // console.log(ord);
 
 
   useEffect(() => {
@@ -22,6 +27,29 @@ const PainelHistorico = () => {
     }).then(response => setHistorico(response.data));
     
   }, [])
+
+
+  // async function handleHistorico(){
+    
+  //     api.get('service', {
+  //     params:{
+  //       status,
+  //       idOwner
+  //     }
+  //   }).then(response => setHistorico(response.data));
+
+  // }
+
+  // console.log(historico)
+
+
+  
+//  useEffect(() => {
+
+//   handleHistorico();
+  
+// }, [historico])
+
 
 
   return (
