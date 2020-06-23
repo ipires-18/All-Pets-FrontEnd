@@ -67,6 +67,12 @@ export default function MyVerticallyCenteredModalAnimal(props) {
           </div>
 
           <div class="item-input">
+            <label htmlFor="raca" style={{display:'flex', justifyContent:'flex-start'}}>Tipo de Pet</label>
+            <input id="raca" type="text" placeholder="Digite o nome da tipo de Pet" value={typePet}
+                onChange={(e) => setTypePet(e.target.value)}/>
+          </div>
+
+          <div class="item-input">
             <label htmlFor="raca" style={{display:'flex', justifyContent:'flex-start'}}>Raça</label>
             <input id="raca" type="text" placeholder="Digite o nome da raça" value={breed}
                 onChange={(e) => setBreed(e.target.value)}/>
@@ -79,12 +85,6 @@ export default function MyVerticallyCenteredModalAnimal(props) {
           </div>
 
           <div class="item-input">
-            <label htmlFor="raca" style={{display:'flex', justifyContent:'flex-start'}}>Tipo de Pet</label>
-            <input id="raca" type="text" placeholder="Digite o nome da raça" value={typePet}
-                onChange={(e) => setTypePet(e.target.value)}/>
-          </div>
-         
-          <div class="item-input">
             <label htmlFor="porte" style={{display:'flex', justifyContent:'flex-start'}}>Porte</label>
             <select id="porte" style={{marginTop:10}} onChange={(e) => setSize(e.target.value)}>
               <option value="">Selecione o porte</option>
@@ -96,7 +96,7 @@ export default function MyVerticallyCenteredModalAnimal(props) {
 
           <div class="item-input">
             <label htmlFor="raca" style={{display:'flex', justifyContent:'flex-start'}}>Observação</label>
-            <input id="raca" type="text" placeholder="Digite o nome da raça" value={observacao}
+            <input id="raca" type="text" placeholder="Digite o nome da observação" value={observacao}
                 onChange={(e) => setObservacao(e.target.value)}/>
           </div>
 

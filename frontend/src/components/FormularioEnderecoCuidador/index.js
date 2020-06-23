@@ -129,7 +129,7 @@ export default function FormularioCadastroCuidador(){
                       onChange={(e) => setEndereco(e.target.value)}/>
                     </div> 
                     <div class="item-input">
-                        <label htmlFor="cidade" style={{display:'flex', justifyContent:'flex-start'}}>Number</label>
+                        <label htmlFor="cidade" style={{display:'flex', justifyContent:'flex-start'}}>Numero</label>
                         <input id="cidade" type="text" placeholder="Digite seu endereço" value={number}
                         onChange={(e) => setNumber(e.target.value)}/>
                     </div>
