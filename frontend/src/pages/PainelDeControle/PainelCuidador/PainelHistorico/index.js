@@ -19,7 +19,8 @@ const PainelHistorico = () => {
     api.get('service', {
       params:{
         status,
-        idCare
+        idCare,
+        ord
       }
     }).then(response => setHistorico(response.data));
     
