@@ -21,7 +21,9 @@ export default function MyVerticallyCenteredModalService(props) {
 
   swal("Proposta", "Aceita com sucesso", "success");
 
-  history.push('/perfil/historico');
+  history.push('/result');
+
+  console.log(res)
       
  }
 

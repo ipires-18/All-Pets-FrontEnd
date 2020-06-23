@@ -19,7 +19,7 @@ export default function NavDono(){
 
 
   function handleLogout(){
-    localStorage.clear();
+    // localStorage.clear();
 
     history.push('/')
   }

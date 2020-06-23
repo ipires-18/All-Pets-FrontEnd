@@ -4,10 +4,18 @@ import api from '../../../../../services/api';
 
 const PainelOfertasResult = () => {
 
+  const idCare = localStorage.getItem('idUser')
   const [pet, setPet] = useState([]);
+  const [status] = useState(1);
   
-  useEffect(() => {api.get('pets').then(response => {setPet(response.data);})},[]);
+  useEffect(() => {api.get('service', {
+    params:{
+      status,
+      idCare
+    }
+  }).then(response => {setPet(response.data);})},[]);
   
+  console.log(pet)
  
   return (
     <>  
@@ -30,10 +38,10 @@ const PainelOfertasResult = () => {
                       <p>{`${pet.fkOwner.name}`}</p>
 
                       <strong>Nome do Animal</strong>
-                      <p>{pet.name}</p>
+                      <p>{pet.fkOwner.animal.name}</p>
                             
-                      <strong>Raça</strong>
-                      <p>{pet.breed}</p>
+                      <strong>Tipo de Pet</strong>
+                      <p>{pet.fkOwner.animal.typePet}</p>
 
                     </div>
 

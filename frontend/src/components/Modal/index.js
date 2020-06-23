@@ -15,56 +15,55 @@ export default function MyVerticallyCenteredModal(props) {
       try{
 
         const data = {
-          "fkCare": {
+          "fkOwner": {
             "idUser": idUserDono
           },
-          "fkOwner": {
+          "fkCare": {
             "idUser": idUserCuidador
           },
           "qtdTime":quantidade,
           "description":descricao   
         }
         
-      
-      
       const response = await api.post('service', data);
 
-      // if(response.status == 201){
 
-      //   const idUser =  localStorage.getItem('idUser');
-      //   const twoFactor = localStorage.getItem('twoFactor');
-      //   const twoFactorCode = localStorage.getItem('twoFactorCode');
-      //   const name = localStorage.getItem('name');
-      //   const email = localStorage.getItem('email');
-      //   const password = localStorage.getItem('password');
-      //   const cpf = localStorage.getItem('cpf');
-      //   const birthDate = localStorage.getItem('birthDate');
-      //   const whatsapp = localStorage.getItem('whatsapp');
-      //   const rg = localStorage.getItem('rg');
-      //   const graduacao = localStorage.getItem('graduacao');
-      //   const valueTime = localStorage.getItem('valueTime');
-      //   const typeUser = localStorage.getItem('typeUser');
-      //   const idAddress = localStorage.getItem('idAddress');
-      //   const idPet = localStorage.getItem('idPet');
+
+      if(response.status == 201){
+
+        const idUser =  localStorage.getItem('idUser');
+        const twoFactor = localStorage.getItem('twoFactor');
+        const twoFactorCode = localStorage.getItem('twoFactorCode');
+        const name = localStorage.getItem('name');
+        const email = localStorage.getItem('email');
+        const password = localStorage.getItem('password');
+        const cpf = localStorage.getItem('cpf');
+        const birthDate = localStorage.getItem('birthDate');
+        const whatsapp = localStorage.getItem('whatsapp');
+        const rg = localStorage.getItem('rg');
+        const graduacao = localStorage.getItem('graduacao');
+        const valueTime = localStorage.getItem('valueTime');
+        const typeUser = localStorage.getItem('typeUser');
+        const idAddress = localStorage.getItem('idAddress');
+        const idPet = localStorage.getItem('idPet');
        
-      //   const res = await api.put(`donos/${idUser}`, {
-      //     twoFactor,
-      //     twoFactorCode,
-      //     name,
-      //     email,
-      //     password,
-      //     cpf,
-      //     birthDate,
-      //     whatsapp,
-      //     rg,
-      //     graduacao,
-      //     valueTime,
-      //     typeUser,
-      //     idAddress,
-      //     idPet
-      //   });
-
-      // }
+        const res = await api.put(`donos/${idUser}`, {
+          twoFactor,
+          twoFactorCode,
+          name,
+          email,
+          password,
+          cpf,
+          birthDate,
+          whatsapp,
+          rg,
+          graduacao,
+          valueTime,
+          typeUser,
+          idAddress,
+          idPet
+        });
+      }
         
       localStorage.setItem('idServices', response.data.idService);
 

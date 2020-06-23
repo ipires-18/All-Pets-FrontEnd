@@ -8,8 +8,7 @@ const PainelContrato = () => {
   const  idOwner =  localStorage.getItem('idUser');
   const [historico, setHistorico] = useState([]);
   const [ord, setOrd] = useState(true);
-  const status = localStorage.getItem('status')
-
+  const [status] = useState(1);
 
   useEffect(() => {
 
@@ -39,11 +38,6 @@ const PainelContrato = () => {
             <section className="container">
                 <div className="contendhear" style={{display:'flex', justifyContent:'space-between', margin:'0 auto'}}>
                   <strong><span>Ultimos Contratos</span></strong>
-                  <button className="button"  type="button" 
-                    style={{display:'flex', justifyContent:'center', alignItems:'center', 
-                    width:200, color:'#FFF',background:'#9C27B0'}}>
-                    Baixar todos arquivos
-                  </button>
                 </div>
                 
                 <table role="table" class="table">
@@ -52,8 +46,8 @@ const PainelContrato = () => {
                       <th role="columnheader">ID do Serviço</th>
                       <th role="columnheader">Nome do Cuidador</th>
                       <th role="columnheader">Descrição do Serviço</th>
-                      <th role="columnheader">Valor Ganho</th>
-                      <th role="columnheader">Baixar Arquivos</th>
+                      <th role="columnheader">Valor Pago</th>
+                      <th role="columnheader">Animal</th>
                     </tr>
                   </thead>
                 
@@ -62,15 +56,15 @@ const PainelContrato = () => {
                         <tr key={historicos.idService} role="row">
                           <td role="cell" data-title="Serviço">{historicos.idService}</td>
 
-                          <td role="cell" data-title="Serviço">{historicos.fkOwner.name}</td>
+                          <td role="cell" data-title="Serviço">{historicos.fkCare.name}</td>
 
                           <td role="cell" data-title="descricao">{historicos.description}</td>
 
                           <td role="cell" data-title="descricao">
-                            {Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'}).format(historicos.fkOwner.valueTime * historicos.qtdTime)}
+                            {Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'}).format(historicos.fkCare.valueTime * historicos.qtdTime)}
                           </td>
                           
-                          <td role="cell" data-title="Download">Download</td>
+                          <td role="cell" data-title="Download">{historicos.fkOwner.animal.name}</td>
                         </tr>
                       </tbody> 
                     ))}

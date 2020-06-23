@@ -5,18 +5,18 @@ import MyVerticallyCenteredModalService from '../../../../components/ModalServic
 
 const PainelOfertas = () => {
 
-  const  idOwner =  localStorage.getItem('idUser');
+  const  idCare =  localStorage.getItem('idUser');
   const [services, setServices] = useState([]);
   const [idService, setIdService] = useState(['']);
-  const [status, setStatus] = useState(0);
+  const [status] = useState(0);
   const [modalShow, setModalShow] = useState(false);
-  
-  function handleServices(){
+ 
 
+  function handleServices(){
     api.get('service', {
       params:{
         status,
-        idOwner
+        idCare
       }
     }).then(response => setServices(response.data));
 
@@ -27,12 +27,10 @@ const PainelOfertas = () => {
 
     handleServices();
     
-  }, [idOwner])
+  }, [status])
 
 
-  console.log(services)
-
-   function testeId(idx) { setIdService(services[idx].idService); setStatus(1); setModalShow(true);}
+  function testeId(idx) { setIdService(services[idx].idService); setModalShow(true);}
 
   localStorage.setItem("idService", idService);
   localStorage.setItem("status", status);
@@ -50,7 +48,7 @@ const PainelOfertas = () => {
               {services.map((services, index) => (
                 <li style={{display:'flex', flexDirection:'column', margin:'10px'}} key={services.idService}>
                   <strong>Nome do Cliente:</strong>
-                  <p>{services.fkCare.name}</p>
+                  <p>{services.fkOwner.name}</p>
                         
                   <strong>Descrição:</strong>
                   <p>{services.description}</p>
@@ -61,11 +59,11 @@ const PainelOfertas = () => {
 
 
                   <strong>Valor por hora por serviço:</strong>
-                  <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'}).format(services.fkOwner.valueTime)}</p>
+                  <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'}).format(services.fkCare.valueTime)}</p>
 
                   <div className="left" style={{display:'flex',justifyContent:'flex-end'}}>
                     <strong style={{fontSize:20}}>Total do serviço:</strong>
-                    <p style={{fontSize:20}}>{Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'}).format(services.fkOwner.valueTime * services.qtdTime)}</p>
+                    <p style={{fontSize:20}}>{Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'}).format(services.fkCare.valueTime * services.qtdTime)}</p>
                   </div>
 
                   <button  onClick={()=> {testeId(index)}}   className="button"  type="button" style={{display:'flex', color:'#FFF',
